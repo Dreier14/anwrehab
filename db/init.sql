@@ -13,7 +13,7 @@ CREATE TABLE IF NOT EXISTS info(
  id SERIAL PRIMARY KEY,
  photo TEXT,
  name TEXT,
- service TEXT
+ service TEXT,
  information TEXT
 );
 
