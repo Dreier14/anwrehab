@@ -1,0 +1,21 @@
+DROP TABLE IF EXISTS users;
+DROP TABLE IF EXISTS info;
+DROP TABLE IF EXISTS pictures;
+
+CREATE TABLE IF NOT EXISTS users(
+id SERIAL PRIMARY KEY,
+username TEXT,
+password TEXT,
+admin BOOLEAN
+);
+
+CREATE TABLE IF NOT EXISTS info(
+ id SERIAL PRIMARY KEY,
+ photos TEXT,
+ information TEXT
+);
+
+CREATE TABLE IF NOT EXISTS pictures(
+ id SERIAL PRIMARY KEY,
+ picture text
+ );

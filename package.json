@@ -5,17 +5,25 @@
   "private": true,
   "dependencies": {
     "axios": "^0.18.0",
+    "bcryptjs": "^2.4.3",
     "body-parser": "^1.18.3",
     "dotenv": "^6.0.0",
     "express": "^4.16.3",
     "express-sessions": "^1.0.6",
     "massive": "^5.2.0",
+    "nodemailer": "^4.6.8",
     "react": "^16.4.2",
     "react-dom": "^16.4.2",
+    "react-icons": "^3.0.5",
+    "react-icons-kit": "^1.1.7",
+    "react-lottie": "^1.2.3",
     "react-redux": "^5.0.7",
+    "react-responsive-modal": "^3.3.0",
     "react-router-dom": "^4.3.1",
     "react-scripts": "1.1.4",
-    "redux": "^4.0.0"
+    "redux": "^4.0.0",
+    "styled-components": "^3.4.5",
+    "typeface-snowburst-one": "^0.0.54"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -25,10 +33,10 @@
   },
   "proxy": {
     "/auth/callback": {
-      "target": "http://localhost:3500"
+      "target": "http://localhost:3400"
     },
     "/api": {
-      "target": "http://localhost:3500"
+      "target": "http://localhost:3400"
     }
   }
 }
