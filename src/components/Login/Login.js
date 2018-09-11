@@ -87,7 +87,7 @@ class Login extends Component {
       return (
           <div>
             <div>
-               <Modal open={this.props.open} onClose={this.props.close} classNames ={{modal:'custom-modal'}}>
+               {/* <Modal open={this.props.open} onClose={this.props.close} classNames ={{modal:'custom-modal'}}>
                 <div className="login-or-register">
                   <h1 style={{textDecoration: 'underline'}}>Aquatic and Writing Rehab</h1>
                     <br/>
@@ -98,7 +98,7 @@ class Login extends Component {
                 <button className="clicker" type ="sumbit"onClick={this.login}>Log in</button>
                 </div>
               </div>
-              </Modal>
+              </Modal> */}
             </div>
             
         </div>

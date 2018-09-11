@@ -12,10 +12,18 @@ admin BOOLEAN
 CREATE TABLE IF NOT EXISTS info(
  id SERIAL PRIMARY KEY,
  photos TEXT,
+ name TEXT,
  information TEXT
 );
 
 CREATE TABLE IF NOT EXISTS pictures(
  id SERIAL PRIMARY KEY,
- picture text
+ picture TEXT
  );
+
+CREATE TABLE IF NOT EXISTS testimonials(
+id SERIAL PRIMARY KEY,
+names TEXT,
+services TEXT,
+experience TEXT
+);

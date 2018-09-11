@@ -8,6 +8,7 @@ const sM =require('./controllers/nodeMailerController');
 const lR = require( './controllers/bcryptAuthController' );
 const photo = require('./controllers/photoController');
 const pic = require('./controllers/pictureController');
+const tests = require('./controllers/testimonialsController');
 
 const PORT = 3400;
 
@@ -30,12 +31,13 @@ massive(process.env.CONNECTION_STRING).then(db =>{
     
 }).catch(err => console.log('Connection error -------------', err));
 
-/*************PICTURE DATA ************************************/
+/**************TESTIMONIAL DATA********************************/
+app.get('/api/getTests', tests.getTestamonials);
 
+/*************PICTURE DATA ************************************/
 app.get('/api/getPics', pic.getPictureData);
 
 /*************INFO ON EMPLOYEES ENDPOINT***********************/
-
 app.get('/api/getInfo', photo.getPhotoData);
 
 /**************Bcrypt Endpoint************************/
