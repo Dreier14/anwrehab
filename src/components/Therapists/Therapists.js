@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
+import Footer from '../Footer/Footer';
 
 export default class Therapists extends Component {
     constructor(){
@@ -35,9 +36,12 @@ export default class Therapists extends Component {
         })
 
         return (
-            <div style={{paddingTop: '80px'}}>
-               <h1> <div>Meet Our Team </div></h1>
-           {allTherapists} 
+            <div>
+                <div style={{paddingTop: '80px'}}>
+                     <h1> <div>Meet Our Team </div></h1>
+                        {allTherapists} 
+                 </div>
+                 <Footer/>
             </div>
         );
     }

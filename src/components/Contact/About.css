@@ -1,38 +1,47 @@
-.email-form{
+.mailer-form{
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: left;
     font-size: 150%;
-    background: black;
+    background: rgb(181, 230, 158);
     padding-top: 100px;
     width: 100%;
-    height: 100%;
+    height: 86vh;
     justify-content: center;
 }
+
+.fields{
+    height: 50px;
+    width: 250px;
+    font-size: 1.2em;
+}
 .long{
-    color: white;
+    color: rgba(85, 164, 238, 0.877);
     text-align: center;
 }
 
 .intro{
-    color: white;
+    color:rgba(85, 164, 238, 0.877);
     text-align: center;
     font-size: 3em;
 }
 
 .label-content{
-    color:white;
+    font-size: 1.5em;
+    color:rgba(85, 164, 238, 0.877);
 }
 .edit-space{
     font-size: 20pt;
-    background: black;
+    background:white;
     border: 1px solid #bcbec0;
-    color: white;
+    color:black;
+    font-family: Arial, Helvetica, sans-serif;
+
 }
 
 .align{
-   padding-left:2.5%;
+   padding-left:.30%;
 }
 
 .title{
@@ -40,6 +49,15 @@
     text-align: center;
     font-size: 2em;
     text-decoration: underline white;
+}
+
+.inputfile{
+    background: rgba(85, 164, 238, 0.877);
+    padding: 10px 20px;
+    color: rgb(181, 230, 158);
+    border-radius: 10px;
+    font-size:.75em;
+    
 }
 
 @media (min-width: 1281px){

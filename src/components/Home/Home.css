@@ -1,9 +1,223 @@
+/* For Iphone x */
+
+@import url("https://fonts.googleapis.com/css?family=Snowburst+One");
+
 .home-background{
     background-image: url('https://i.imgur.com/t9lZsTc.png');
-    height: 100vh;
     width:100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+}
+
+.background-image{
+    height: 200%;
+    width:  100%;
+}
+
+.parent-text{
+    position: absolute;
+    top:120px;
+    right: 10px;
+    color: white;
+    background: rgba(255, 166, 0, 0.795);
+    width: 37%;
+    height:8%;
+    display: block;
+    text-align: center;
+    font-family: 'Snowburst One',serif;
+    font-size:25px;
+    border-color:rgba(0, 0, 0, 0.329);
+    border-style: dashed;
+    border-width:2px;
+}
+
+.child-text{
+    position: absolute;
+    top: 295px;
+    color: #1db925;
+    font-size: 28px;
+    font-family: 'Snowburst One',serif;
+    background: rgba(255, 255, 255, 0.781);
+    border-radius: 10px;
+    display: block;
+    border-color: rgb(226, 147, 161);
+    border-style: dashed;
+    border-width:2px;
+    text-align: center;
+    width: 80%;
+    left: 10%;
+}
+
+.therapy-text{
+    position: absolute;
+    top: 375px;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    background: rgba(255, 255, 255, 0.781);
+    border-radius: 5px;
+    display: block;
+    text-align: center;
+    width: 80%;
+    left: 10%;
+    color:  rgba(25, 88, 206, 0.836);
+ 
+}
+
+.button {
+    position: absolute;
+    top: 27.3%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: rgba(171, 186, 209, 0.884);
+    color: white;
+    font-size: 12px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0px 10px 14px -7px #276873;
+}
+
+.button:hover{
+    color: rgb(171, 186, 209);
+    background-color: rgb(124, 192, 164)
+}
+
+.blue-box{
+    text-align: center;
+    background:lightblue; 
+    height: 240px;
+    font-size: 20px;
+    border-style: dashed;
+    border-color: aliceblue;
+    color:purple;     
+}
+
+.orange-box{
+    text-align: center;
+    background: rgba(255, 166, 0, 0.795); 
+    height: 280px; 
+    font-size: 20px;
+    border-style: dashed;
+    border-color: aliceblue; 
+    color:purple;   
+}
+
+.green-box{
+    text-align: center;
+    background:#1db925d7; 
+    height: 320px;  
+    font-size: 20px;
+    border-style: dashed;
+    border-color: aliceblue;
+    color:purple;  
+}
+
+.yellow-box{
+    text-align: center;
+    background:yellow;
+    height: 320px;  
+    font-size: 20px;
+    border-style: dashed;
+    border-color: aliceblue;
+    color:purple;  
+
+}
+
+.aquatics{
+    height: 60%;
+    width:  50%;
+    align-content: center;
+    margin-top: 12%;
+    border-radius: 20px;
+    
+}
+
+.therapist{
+    height: 50%;
+    width:  50%;
+    align-content: center;
+    border-radius: 20px;
+    
+}
+
+.writing{
+    height: 60%;
+    width: 50%;
+    align-content: center;
+    /* margin-top: 12%; */
+    border-radius: 20px;
+    
+}
+
+.testimonials{
+    height: 60%;
+    width: 50%;
+    align-content: center;
+    /* margin-top: 12%; */
+    border-radius: 20px;
+    
+}
+
+.blue-text{
+    text-align: center;
+    position: absolute;
+}
+
+.snow-text{
+    font-family: 'Snowburst One',serif;
+    font-size: 25px;
+}
+
+.button1{
+    position: absolute;
+    top: 77%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: rgba(171, 186, 209, 0.884);
+    color: white;
+    font-size: 12px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0px 10px 14px -7px #276873;
+
+}
+
+.button2{
+    position: absolute;
+    top: 96.5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: rgba(171, 186, 209, 0.884);
+    color: white;
+    font-size: 12px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0px 10px 14px -7px #276873;
+
+}
+
+@media (width: 360px), (height: 640px){
+/* for Galaxy S5 */
+    .child-text{
+        top:290px;
+    }
+
+    .therapy-text{
+        top:370px;
+    }
+    
+    .button{
+        top:36.5%;
+        padding: 8px 18px;
+    }
 }

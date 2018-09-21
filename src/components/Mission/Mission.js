@@ -1,13 +1,12 @@
 import React, { Component } from 'react';
-// import Therapists from '../Therapists/Therapists';
-import Testimonials from '../Testimonials/Testimonials';
+import Footer from '../Footer/Footer';
 
 export default class  extends Component {
     render() {
         return (
-            <div>
-                <Testimonials/>
-                {/* <Therapists/> */}
+            <div style={{paddingTop:"90px"}}>
+            Aj WAS HERE
+            <Footer/>
             </div>
         );
     }

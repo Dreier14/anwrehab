@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css?family=Snowburst+One");
+
+.testimonials-background{
+    background:url('https://ubisafe.org/images/aesthesis-clipart-rain-cloud-3.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    background-attachment: fixed;
+    min-height: 130vh;
+}
+
+.header-for-testimonials{
+    font-size: 3.3em;
+    text-decoration: underline dashed purple;
+    text-align:center;
+    font-family: 'Snowburst One',serif;
+}
+
+.testimonial-info{
+    display: flex;
+    flex-direction: column;
+    margin:10%;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.76);
+    text-align: center;
+    border: purple;
+    border-style:dashed;
+    font-size: 1.2em;
+}
+
+.rehab-photo{
+    height:280px;
+    width:280px;
+    display: flex;
+    flex-direction: column;
+    padding-left:13%;
+}

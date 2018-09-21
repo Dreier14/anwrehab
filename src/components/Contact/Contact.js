@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import './About.css';
+import Footer from '../Footer/Footer';
 
 
 
@@ -64,13 +65,14 @@ export default class Contact extends Component {
     render() {
         
         return (
-            <div className= 'email-form'>
+        <div>
+            <div className= "mailer-form">
                 
                 <div>
                     <h2 className= 'long'>Send Us an Email!</h2>
                     <hr/>
                 <div className='align'>
-                    <div class="contact">
+                    <div className="contact">
                         <form className="mailer" >
                             <div className="form-field">
                             <label htmlFor="name">
@@ -89,7 +91,7 @@ export default class Contact extends Component {
                             <div className="mailer">
                             <label htmlFor="message">
                                 <div className="label-content">Message:</div>
-                                <textarea background="black"rows="9"  cols="27" className="edit-space" onChange={ event =>this.handleChange(event.target.value)} onChange={ event => this.messageHandler(event.target.value)} name="message" required value={this.state.message}/>
+                                <textarea background="white" rows="9"  cols="25" className="edit-space" onChange={ event =>this.handleChange(event.target.value)} onChange={ event => this.messageHandler(event.target.value)} name="message" required value={this.state.message}/>
                             </label>
                             </div>
                 
@@ -111,7 +113,10 @@ export default class Contact extends Component {
                     </div>
                     </div> 
                 </div>
+                <br/>
             </div>
+            <Footer/>
+        </div>
             );
         }
     }

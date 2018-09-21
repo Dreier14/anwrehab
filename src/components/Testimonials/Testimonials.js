@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
 import axios from 'axios';
+import Footer from '../Footer/Footer';
+import "./Testimonial.css";
+import Rehab from './Rehab.jpg';
 
 export default class Testamonials
  extends Component {
@@ -34,18 +37,28 @@ export default class Testamonials
         let allInfo = this.state.getClientInfo.map( (e, i)=>{
             console.log(e);
             return(
-                <div style={{paddingTop: '80px'}} key= {i}>
-                  <div>  {e.names} </div>
-                  <div> {e.services} </div>
-                  <div> {e.experience} </div>
+                <div className="testimonial-info" key= {i}>
+                  <div> Service: {e.services} </div>
+                  <br/>
+                  <div> Experience: {e.experience} </div>
+                  <br/>
+                  <div> Name: {e.names} </div>
                 </div>
             )
         })
 
         return (
-            <div>
-            {allInfo}
-             </div>
+        <div>
+            <div className ="testimonials-background">
+                <div style={{paddingTop: '100px'}}>
+                    <div className="header-for-testimonials">Testimonials</div>
+                        {allInfo}
+                        <img className="rehab-photo" src={Rehab}/>
+                        <br/>                   
+                     <Footer/>
+                </div>
+            </div>
+         </div>
         );
     }
 }

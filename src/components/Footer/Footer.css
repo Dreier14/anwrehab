@@ -1,6 +1,6 @@
 .footer{
-    bottom: 0;
-    position: sticky;
+    margin-bottom: -100px;
+    position: absolute;
     left: 0;
     background: rgb(0, 204, 255);;
     width: 100%;

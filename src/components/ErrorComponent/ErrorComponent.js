@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import {Link} from 'react-router-dom';
 import LottieError from './LottieError'
 import './ErrorComponent.css'
+import Footer from '../Footer/Footer';
 
 
 export default class ErrorComponent extends Component {
@@ -22,6 +23,7 @@ export default class ErrorComponent extends Component {
                       <Link to="/" > <LottieError/></Link>
                   </div>
               </div>
+              <Footer/>
             </div>
         </div>  
             

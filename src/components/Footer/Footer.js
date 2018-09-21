@@ -50,7 +50,7 @@ export default class Footer extends Component {
                             <Wrapper><Link to="/Mission">Mission</Link></Wrapper>
                             <Wrapper><a className="Links" onClick={this.showLogin} > Log In </a></Wrapper>
                         </ul>
-                    <div> © 2013. Aquatic-N-Writing Rehab. All rights reserved.</div>
+                    <div className= "copyright"> © 2013. Aquatic-N-Writing Rehab. All rights reserved.</div>
                     <Login open={open} close={this.onCloseModal}  center/>
                 </div>
              </div>
