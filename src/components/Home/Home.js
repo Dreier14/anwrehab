@@ -6,6 +6,7 @@ import Aqua from "./Aqua.jpg";
 import Therapists from "./Therapists.jpg";
 import Writing from "./Writing.jpg";
 import Testimonials from "./Testimonials.jpg"
+import Learn from "./Learn.jpg"
 
 // import Login from '../Login/Login';
 
@@ -14,7 +15,7 @@ export default class  extends Component {
         return (
             <div className ="home-background">
                 <div style={{paddingTop:'95px'}}>
-                    <div>
+                    <div className="master-container">
                         <div className="top-container">
                             <img className="background-image" src="//nebula.wsimg.com/99c0f18d164056a37b38857e04c11921?AccessKeyId=0F9D1A4ACFCC9D22904E&amp;disposition=0&amp;alloworigin=1"/>
                             <div className="parent-text">Unleash Your Child's Potential</div>
@@ -24,7 +25,8 @@ export default class  extends Component {
                             <img className="background-image" src="//nebula.wsimg.com/75fe03dfec8707844b608aeb1fbd614f?AccessKeyId=0F9D1A4ACFCC9D22904E&amp;disposition=0&amp;alloworigin=1"/>
                             <div className ="child-text"> Child-Centered Therapy </div>
                             <div className="therapy-text">We believe that every child is unique and will grow at his or her own pace. Our services spend time nurturing children’s strengths and encouraging them to reach new heights.</div>
-                            <button className="button"><Link to="/ReadMore">Read More</Link></button> 
+                            <img className="learn-picture" src={Learn}/>
+                            <button className="button"><Link to="/LearnMore">Learn More</Link></button> 
                         </div>
                         <div className="blue-box">
                             <div className="snow-text">Aquatics</div>

@@ -5,7 +5,8 @@ import styled from 'styled-components';
 import Icon from 'react-icons-kit';
 import { home2 } from 'react-icons-kit/icomoon/home2';
 import {u1F46A} from 'react-icons-kit/noto_emoji_regular/u1F46A';
-import {u1F4AD} from 'react-icons-kit/noto_emoji_regular/u1F4AD'
+import {u1F4AD} from 'react-icons-kit/noto_emoji_regular/u1F4AD';
+import Logo from './logo.png';
 
 const Wrapper = styled.li`
 font-size:1.3em`
@@ -53,7 +54,7 @@ export default class Nav extends Component {
              </header> */}
              <header className = "header">
               <Link to = "/" className= "logo">
-              <img src="//nebula.wsimg.com/2d7d6d1350cb0df455ed27514b4042c8?AccessKeyId=0F9D1A4ACFCC9D22904E&amp;disposition=0&amp;alloworigin=1" height ="70px" width ="70px" />
+              <img src={Logo} height ="70px" width ="70px" />
               <div className = "rehab"> Aquatic-N-Writing Rehab</div>
               </Link>
 

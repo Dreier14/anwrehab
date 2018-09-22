@@ -36,3 +36,16 @@
     flex-direction: column;
     padding-left:13%;
 }
+
+@media(min-width:500px){
+    .testimonial-info{
+        width:50%;
+        margin: auto;
+        margin-top: 5%;
+    }
+    
+    .rehab-photo{
+        
+        
+    }
+}

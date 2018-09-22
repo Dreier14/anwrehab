@@ -15,6 +15,7 @@
     height: 50px;
     width: 250px;
     font-size: 1.2em;
+    border-radius:10px;
 }
 .long{
     color: rgba(85, 164, 238, 0.877);
@@ -31,13 +32,14 @@
     font-size: 1.5em;
     color:rgba(85, 164, 238, 0.877);
 }
+
 .edit-space{
     font-size: 20pt;
     background:white;
     border: 1px solid #bcbec0;
     color:black;
     font-family: Arial, Helvetica, sans-serif;
-
+    border-radius:10px;
 }
 
 .align{

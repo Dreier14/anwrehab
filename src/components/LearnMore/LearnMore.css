@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css?family=Snowburst+One");
+
+.video{
+    height:400px;
+    width:100%;
+    /* padding-left:10%; */
+}
+
+.learn-background{
+    background: rgba(255, 166, 0, 0.781);
+    height:100vh;
+}
+
+.facebook-button{
+    position: absolute;
+    top: 83%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: rgba(171, 186, 209, 0.884);
+    color:white;
+    font-size: 12px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0px 10px 14px -7px #276873; 
+}
+
+.facebook-button:hover{
+    color: rgb(57, 120, 214);
+    background-color: rgb(124, 192, 164)
+}
+
+.facebook-text{
+    text-align:center;
+    font-size: 200%;
+    font-family: 'Snowburst One',serif;
+}
+

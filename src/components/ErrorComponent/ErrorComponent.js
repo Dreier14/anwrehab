@@ -23,8 +23,8 @@ export default class ErrorComponent extends Component {
                       <Link to="/" > <LottieError/></Link>
                   </div>
               </div>
-              <Footer/>
-            </div>
+             </div>
+            <Footer/>
         </div>  
             
         );
