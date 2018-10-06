@@ -24,13 +24,14 @@ export default class Therapists extends Component {
     }
 
     render() {
-        let allTherapists = this.state.therapistInfo.map( e => {
-            console.log(e);
+        let allTherapists = this.state.therapistInfo.map(element => {
+            console.log(element);
             return(
-                <div>
-                   <h2> {e.photo} </h2>
-                   <h2>{e.name}</h2>
-                   <h2>{e.information}</h2>
+                <div key ={element.id}>
+                     <img src= {element.photo}/>
+                   <h2>{element.name}</h2>
+                   <h2>{element.service}</h2>
+                   <h2>{element.information}</h2>
                 </div>
             )
         })
@@ -39,7 +40,7 @@ export default class Therapists extends Component {
             <div>
                 <div style={{paddingTop: '80px'}}>
                      <h1> <div>Meet Our Team </div></h1>
-                        {allTherapists} 
+                      <div> {allTherapists} </div> 
                  </div>
                  <Footer/>
             </div>

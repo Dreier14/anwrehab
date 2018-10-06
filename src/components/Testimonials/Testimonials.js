@@ -53,6 +53,7 @@ export default class Testamonials
                 <div style={{paddingTop: '100px'}}>
                     <div className="header-for-testimonials">Testimonials</div>
                         {allInfo}
+                        <br/>
                         <img className="rehab-photo" src={Rehab}/>
                         <br/>                   
                      <Footer/>

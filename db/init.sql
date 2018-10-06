@@ -11,8 +11,9 @@ admin BOOLEAN
 
 CREATE TABLE IF NOT EXISTS info(
  id SERIAL PRIMARY KEY,
- photos TEXT,
+ photo TEXT,
  name TEXT,
+ service TEXT
  information TEXT
 );
 
