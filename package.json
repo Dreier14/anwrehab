@@ -7,7 +7,8 @@
     "axios": "^0.18.0",
     "bcryptjs": "^2.4.3",
     "body-parser": "^1.18.3",
-    "dotenv": "^6.0.0",
+    "bootstrap": "^4.1.3",
+    "dotenv": "^6.2.0",
     "express": "^4.16.3",
     "express-session": "^1.15.6",
     "express-sessions": "^1.0.6",
@@ -15,8 +16,10 @@
     "massive": "^5.4.0",
     "nodemailer": "^4.6.8",
     "nodemon": "^1.18.4",
-    "react": "^16.4.2",
-    "react-dom": "^16.4.2",
+    "now-env": "^3.1.0",
+    "react": "^16.6.0",
+    "react-bootstrap": "^0.32.4",
+    "react-dom": "^16.6.1",
     "react-icons": "^3.0.5",
     "react-icons-kit": "^1.1.7",
     "react-lottie": "^1.2.3",
@@ -24,6 +27,7 @@
     "react-responsive-modal": "^3.3.0",
     "react-router-dom": "^4.3.1",
     "react-scripts": "1.1.4",
+    "reactstrap": "^6.5.0",
     "redux": "^4.0.0",
     "styled-components": "^3.4.5",
     "typeface-snowburst-one": "^0.0.54"
@@ -32,7 +36,15 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "now-start": "node server/index.js",
+  "deploy": "now --public --dotenv=.env.prod -d"
+},
+"now":{
+  "alias":"anwrehab"
+}, 
+  "resolutions": {
+    "**/event-stream": "^4.0.1"
   },
   "proxy": {
     "/auth/callback": {

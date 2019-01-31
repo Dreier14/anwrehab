@@ -8,7 +8,6 @@
     text-align: center;
     display: flex;
     justify-content: center;
-    align-items: center;
     flex-direction: column;
     
  }
@@ -27,10 +26,13 @@
     padding: 14px 16px;
     text-decoration: none;
     font-size: 15px;
-    
- 
-   
- }
+}
+
+.copyright{
+    margin-left: 3%;
+
+}
+
 
  ul .footer-menu{
      list-style: none;
@@ -54,3 +56,5 @@
         padding-right:15%;
     }
   }
+
+  

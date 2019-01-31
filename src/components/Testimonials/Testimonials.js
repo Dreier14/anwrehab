@@ -3,6 +3,8 @@ import axios from 'axios';
 import Footer from '../Footer/Footer';
 import "./Testimonial.css";
 import Rehab from './Rehab.jpg';
+import { Link } from 'react-router-dom';
+import { Container, Row, Col } from 'reactstrap';
 
 export default class Testamonials
  extends Component {
@@ -38,11 +40,11 @@ export default class Testamonials
             console.log(e);
             return(
                 <div className="testimonial-info" key= {i}>
-                  <div> Service: {e.services} </div>
+                  <div> {e.services} </div>
                   <br/>
-                  <div> Experience: {e.experience} </div>
+                  <div> {e.experience} </div>
                   <br/>
-                  <div> Name: {e.names} </div>
+                  <div> {e.names} </div>
                 </div>
             )
         })
@@ -54,7 +56,7 @@ export default class Testamonials
                     <div className="header-for-testimonials">Testimonials</div>
                         {allInfo}
                         <br/>
-                        <img className="rehab-photo" src={Rehab}/>
+                       <Link to='/'><img className="rehab-photo" src={Rehab}/></Link>
                         <br/>                   
                      <Footer/>
                 </div>

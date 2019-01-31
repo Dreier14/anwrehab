@@ -2,6 +2,41 @@
 
 @import url("https://fonts.googleapis.com/css?family=Snowburst+One");
 
+.chalkboard{
+    background: url("//nebula.wsimg.com/75fe03dfec8707844b608aeb1fbd614f?AccessKeyId=0F9D1A4ACFCC9D22904E&amp;disposition=0&amp;alloworigin=1");
+    
+}
+
+.crayon{
+    width: 12vw;
+}
+
+/* .board .card{
+    border-style: none;
+} */
+
+.card{
+    border-style: dashed;
+    border-color: purple;
+    border-width: 3px;
+    background: bottom;
+}
+
+.card-text{
+    color: purple;
+}
+
+.card-title{
+    font-family: 'Snowburst One',serif;
+    color: purple;
+}
+
+.card-body{
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .home-background{
     background-image: url('https://i.imgur.com/t9lZsTc.png');
     width:100%;
@@ -11,402 +46,91 @@
     position: relative;
 }
 
+
 .background-image{
     height: 200%;
     width:  100%;
 }
 
+.background-image-two{
+    height: 38vh;
+    width:  100%;
+}
+
+
 .learn-picture{
     display: none;
 }
 
-.parent-text{
+.container {
+    position: relative;
+}
+
+.text-block {
+    border: dashed;
     position: absolute;
-    top:120px;
-    right: 10px;
-    color: white;
+    width: 27%;
+    position: absolute;
+    text-align: center;
+    left: 71%;
+    top: 6.5%;
     background: rgba(255, 166, 0, 0.795);
-    width: 37%;
-    height:8%;
-    display: block;
-    text-align: center;
+    color: white;
     font-family: 'Snowburst One',serif;
-    font-size:25px;
-    border-color:rgba(0, 0, 0, 0.329);
-    border-style: dashed;
-    border-width:2px;
 }
 
-.child-text{
-    position: absolute;
-    top: 295px;
-    color: #1db925;
-    font-size: 7vw;
-    font-family: 'Snowburst One',serif;
-    background: rgba(255, 255, 255, 0.781);
-    border-radius: 10px;
-    display: block;
-    border-color: rgb(226, 147, 161);
-    border-style: dashed;
-    border-width:2px;
-    text-align: center;
-    width: 80%;
-    left: 10%;
+.child{
+    width: 100%;
 }
 
-.therapy-text{
-    position: absolute;
-    top: 370px;
-    font-size: 16px;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    background: rgba(255, 255, 255, 0.781);
-    border-radius: 5px;
-    display: block;
-    text-align: center;
-    width: 80%;
-    left: 10%;
-    color:  rgba(12, 139, 224, 0.932);
-    border: dashed yellow 2px;
- 
-}
-
-.button {
-    position: absolute;
-    top: 27.3%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
+.btn-secondary{
     background-color: rgba(205, 211, 221, 0.884);
     color: white;
-    font-size: 12px;
-    padding: 12px 24px;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-    box-shadow: 0px 10px 14px -7px #276873;
 }
 
-.button:hover{
-    color: rgb(171, 186, 209);
+.btn-secondary:hover{
+    color: rgb(57, 120, 214);
     background-color: rgb(124, 192, 164)
 }
 
-.button1:hover{
-    color: rgb(171, 186, 209);
-    background-color: rgb(124, 192, 164)
-}
-
-.button2:hover{
-    color: rgb(171, 186, 209);
-    background-color: rgb(124, 192, 164)
-}
-
-.blue-box{
-    text-align: center;
-    background:lightblue; 
-    height: 240px;
-    font-size: 20px;
-    border-style: dashed;
-    border-color: purple;
-    color:purple;     
-}
-
-.orange-box{
-    text-align: center;
-    background: rgba(255, 166, 0, 0.795); 
-    height: 280px; 
-    font-size: 20px;
-    border-style: dashed;
-    border-color: purple;
-    color:purple;   
-}
-
-.green-box{
-    text-align: center;
-    background:#1db925d7; 
-    height: 320px;  
-    font-size: 20px;
-    border-style: dashed;
-    border-color: purple;
-    color:purple;  
-}
-
-.yellow-box{
-    text-align: center;
-    background:yellow;
-    height: 320px;  
-    font-size: 20px;
-    border-style: dashed;
-    border-color: purple;
-    color:purple;  
-
-}
-
-.aquatics{
-    height: 60%;
-    width:  50%;
-    align-content: center;
-    margin-top: 2%;
-    border-radius: 20px;
-    
-}
-
-.therapist{
-    height: 50%;
-    width:  50%;
-    align-content: center;
-    border-radius: 20px;
-    
-}
-
-.writing{
-    height: 60%;
-    width: 50%;
-    align-content: center;
-    /* margin-top: 12%; */
-    border-radius: 20px;
-    
-}
-
-.testimonials{
-    height: 60%;
-    width: 50%;
-    align-content: center;
-    /* margin-top: 12%; */
-    border-radius: 20px;
-    
-}
-
-.snow-text{
-    font-family: 'Snowburst One',serif;
-    font-size: 25px;
-}
-
-.button1{
-    position: absolute;
-    top: 77%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    background-color: rgba(171, 186, 209, 0.884);
-    color: white;
-    font-size: 12px;
-    padding: .75vw 2vw;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-    box-shadow: 0px 10px 14px -7px #276873;
-
-}
-
-.button2{
-    position: absolute;
-    top: 96.5%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    background-color: rgba(171, 186, 209, 0.884);
-    color: white;
-    font-size: 12px;
-    padding: .75vw 2vw;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-    box-shadow: 0px 10px 14px -7px #276873;
-
-}
-
-@media (width: 360px), (height: 640px){
 /* for Galaxy S5 */
-    .child-text{
-        top:290px;
-    }
-
-    .therapy-text{
-        top:370px;
-    }
-    
-    .button{
-        top:36.5%;
-        padding: 8px 18px;
-    }
-}
 
 @media(min-width:600px){
+
+    .master {
+            width: 70%;
+            margin-left: 15%;
+    }
+    
+    .text-block{
+        left: 62%;
+        top: 6.5%;
+        width: 12%;
+        font-size:2vw;
+    }
+
+    .outer-container{
+        display: flex;
+        flex-direction: column;
+    }
     .master-container{
         width: 60%;
         margin:auto;
     }
 
-    .parent-text{
-        width: 20vw;
-        height:12vw;
-        margin-right:22%;
-        font-size:3vw;
-    }
-    
-    .child-text{
-        margin-left:-5%; 
-        width: 40%; 
-        top:15%;
-        font-size: 2vw;
-    }
-
-    .therapy-text{
-        width: 40%; 
-        margin-left:-5%;
-        top:35%;
-        font-size: 2vw;
-    }
-
-    .learn-picture{
-        display:block;
-        width:27vw;
-        margin-left: 50%;
-        margin-top: -50.5%;
-        /* margin-top: 12%; */
-        border-radius: 20px;
-        position: absolute;
-        
-    }
-    
-    .button{
-        margin-top:-8.5%;
-        margin-left:23%;
-        width:27vw;
-        height: 4.5vw;
-        font-size: 2.5vw;
-    }
-
-    .button1{
-        top: 83%;
-    }
-
-    .button2{
-        top: 90%;
-    }
-
-    .container{
-        position: relative;
-    }
-
-    .therapist{
-        height: 35vh;
-        width:  25vw;
-        margin-left:20%;
-        margin-top:-21.5%;
-        border-radius: 20px;
-        
-    }
-    
-    .writing{
-        height: 30vh;
-        width:  25vw;
-        margin-left:20%;
-        margin-top:-27%;
-        border-radius: 20px;
-        
-    }
-    
-    .testimonials{
-        height: 35vh;
-        width:  25vw;
-        margin-left:20%;
-        margin-top:-22%;
-        border-radius: 20px;;
-        
-    }
-
-    .aquatics{
-        height: 25vh;
-        width:  25vw;
-        margin-left:20%;
-        margin-top:-17%;
-        border-radius: 20px;
-        
-    }
-    
-    .blue-box{
-        height: 240px;   
-    }
-    
-    .orange-box{
-        height: 300px;    
-    }
-    
-    .green-box{ 
-        height: 340px;  
-    }
-    
-    .yellow-box{
-        height: 340px;  
-    }
-
-    .blue-text{
-        margin-left:20%;
-        margin-top:2%;
-        text-align:center; 
-        background: rgba(255, 255, 255, 0);  
-        width:10vw;
-        border-radius: 10px;
-    }
-    
     .snow-text{
-        margin-right:43%;
-        margin-top:3%; 
+        padding-top:2%;
     }
 
-    .orange-text{
-        margin-left:20%;
-        margin-top:2%;
-        text-align:center; 
-        background: rgba(255, 255, 255, 0);  
-        width:10vw;
-        border-radius: 10px;    
-    }
-    
-    .green-text{ 
-        margin-left:20%;
-        margin-top:2%;
-        text-align:center; 
-        background: rgba(255, 255, 255, 0);  
-        width:10vw;
-        border-radius: 10px; 
-    }
-    
-    .yellow-text{
-        margin-left:20%;
-        margin-top:2%;
-        text-align:center; 
-        background: rgba(255, 255, 255, 0);  
-        width:10vw;
-        border-radius: 10px;
-
-    }
-
-    .button{
-        top: 90%;
-    }
-
-    .button1{
-        top: 79%;
-        margin-left:-13%;
-    }
-
-    .button2{
-        top: 94.5%;
-        margin-left:-13%;
+    .centered{
+        display: flex;
+        flex-direction: column;
     }
 
     
-
 }
 
-@media(width:568px) {
-    .parent-text{
-        width:50%;
-    }
-}
-    
+
+
     
 

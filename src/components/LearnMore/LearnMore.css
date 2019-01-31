@@ -1,19 +1,40 @@
 @import url("https://fonts.googleapis.com/css?family=Snowburst+One");
 
+.btn-secondary{
+    background-color: rgba(205, 211, 221, 0.884);
+    color: rgb(57, 120, 214);
+}
+
 .video{
-    height:400px;
-    width:100%;
+    height: 100%;
+    width: 100%;
     /* padding-left:10%; */
 }
 
+.button-stuff{
+    margin: 0 auto;
+    display: table;
+}
+
+.master-learn{
+    height: 100%;
+}
+
 .learn-background{
-    background: rgba(255, 166, 0, 0.781);
-    height:100vh;
+    background: rgba(251, 255, 0, 0.63);
+    height:auto;
+}
+
+.teach-text{
+    font-family: 'Snowburst One',serif;
+    font-size: 200%;
+    text-align: center;
+    margin: auto;
 }
 
 .facebook-button{
     position: absolute;
-    top: 83%;
+    top: 100%;
     left: 50%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
@@ -32,9 +53,101 @@
     background-color: rgb(124, 192, 164)
 }
 
+
 .facebook-text{
     text-align:center;
     font-size: 200%;
     font-family: 'Snowburst One',serif;
 }
+
+.technology{
+    font-size: 1.5em;
+    text-decoration: underline dashed purple;
+    text-align:center;
+    font-family: 'Snowburst One',serif;
+}
+
+@media(min-width: 700px){
+
+    .learn-background{
+        height:100%;
+    }
+
+    .facebook-button{
+        top:174%;
+        position: absolute;
+
+    }
+
+    .video{
+        height:60vh;
+        width:50vw;
+        display: flex;
+        flex-direction: column;
+        /* padding-left:10%; */
+    }
+
+    .master-learn{
+        width: 70%;
+        margin: auto;
+    }
+}
+/* 
+@media(height:640px){
+    
+    .learn-background{
+        height:100%;
+    }
+
+    .facebook-button{
+        top:125%;
+    }
+} */
+
+/* @media(height:731px){
+
+    .learn-background{
+        height:120vh;
+    }
+
+    .facebook-button{
+        top:110%;
+    }
+} */
+
+/* @media(height:568px){
+
+    .learn-background{
+        height:165vh;
+    }
+
+    .facebook-button{
+        top:155%;
+        position: absolute;
+        text-align: center;
+        padding: 10px 10px;
+    }
+} */
+
+/* @media(height:667px){
+
+    .facebook-button{
+        top:120%;
+    }
+
+    .learn-background{
+        height:125vh;
+    }
+} */
+
+/* @media(height:736px){
+
+    .facebook-button{
+        top:110%;
+    }
+
+    .learn-background{
+        height:115vh;
+    }
+} */
 

@@ -7,13 +7,4 @@ module.exports ={
         }).catch( err => console.log('----------------------->Data Error',err));
         
     }
-
-    // deletePhotos: (req, res) =>{
-    //     const { post_id } = req.params
-    //     const { id } = req.session.user 
-    // } 
-
-    
-
-
 }

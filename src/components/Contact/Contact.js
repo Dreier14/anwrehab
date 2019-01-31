@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-import './About.css';
+import './Contact.css';
 import Footer from '../Footer/Footer';
 
 
@@ -66,7 +66,9 @@ export default class Contact extends Component {
         
         return (
         <div>
-            <div className= "mailer-form">
+            <div className="mail-start">
+            <div className="center-it">
+            <div className= "mailer-form" style={{paddingTop: "105px"}}>
                 
                 <div>
                     <h2 className= 'long'>Send Us an Email!</h2>
@@ -114,6 +116,8 @@ export default class Contact extends Component {
                     </div> 
                 </div>
                 <br/>
+            </div>
+            </div>
             </div>
             <Footer/>
         </div>

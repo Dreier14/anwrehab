@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import Footer from '../Footer/Footer';
+import './Therapists.css'
+import { Card, CardImg } from 'reactstrap';
+
 
 export default class Therapists extends Component {
     constructor(){
@@ -27,22 +30,29 @@ export default class Therapists extends Component {
         let allTherapists = this.state.therapistInfo.map(element => {
             console.log(element);
             return(
-                <div key ={element.id}>
-                     <img src= {element.photo}/>
-                   <h2>{element.name}</h2>
+                <div className="therapists-info" key ={element.id}>
+                     { element.photo == null ? <img className="default-img" src={'https://static.thenounproject.com/png/1095867-200.png'}/> : <img src={element.photo} class="img-thumbnail"/> }
+                   <h1>{element.name}</h1>
                    <h2>{element.service}</h2>
-                   <h2>{element.information}</h2>
+                   <div className="therapist-text">{element.information}</div>
+                   <br/>
+                   <div className="break"/>
+                   <br/>
+                   <br/>
                 </div>
             )
         })
 
         return (
             <div>
-                <div style={{paddingTop: '80px'}}>
-                     <h1> <div>Meet Our Team </div></h1>
-                      <div> {allTherapists} </div> 
-                 </div>
-                 <Footer/>
+                <div className="therapist-background">
+                    <div style={{paddingTop: '100px'}}>
+                         <h1> <div align="center" className="therapists-head">Meet Our Team </div></h1>
+                         <hr/>
+                         <div> {allTherapists} </div> 
+                     </div>
+                </div>
+              <Footer/>
             </div>
         );
     }

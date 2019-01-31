@@ -20,13 +20,14 @@
 .testimonial-info{
     display: flex;
     flex-direction: column;
-    margin:10%;
+    margin:7%;
     align-items: center;
     background: rgba(255, 255, 255, 0.76);
     text-align: center;
     border: purple;
     border-style:dashed;
     font-size: 1.2em;
+    padding: 2%;
 }
 
 .rehab-photo{
@@ -34,7 +35,7 @@
     width:280px;
     display: flex;
     flex-direction: column;
-    padding-left:13%;
+    margin:auto;
 }
 
 @media(min-width:500px){
@@ -45,7 +46,8 @@
     }
     
     .rehab-photo{
-        
+        display: flex;
+        flex-direction: column;
         
     }
 }

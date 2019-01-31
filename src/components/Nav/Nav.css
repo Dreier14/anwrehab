@@ -1,140 +1,4 @@
- /* .header{
-    position: fixed;
-    width: 100%;
-    background-image: url('https://i.pinimg.com/originals/c8/fa/84/c8fa848eebffaa8145662bc94a85d190.jpg');
-    color: rgba(248, 248, 248, 0.979);
-    text-align: center;
-    z-index: 6;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: row;
-  
-  }
 
-  @import url("https://fonts.googleapis.com/css?family=Snowburst+One");
-  
-  .custom-font{
-    font-family:'Snowburst One',serif;
-    font-size: 1.5em;
-  }
-
-  
-  .header-menu {
-    padding-top:30px;
-    top: 0%;
-    position: fixed;
-    height: 500px;
-    display: flex;
-    text-align: center;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    transition: .5s;
-    width: 100%;
-    z-index: -1;
-    background: rgba(91, 45, 129, 0.856);
-  } 
-  .burger{
-    margin-right: 10px;
-    font-size:35px;
-  }
-  .show{
-    transform: translate(0px,-50px);
-  }
-  
-  .hide {
-    transform: translate(0px,-550px);
-  }
-  
-  .showing{
-      display: flex;
-      flex-direction: column;
-  }
-
-
-  .header .logo {
-    align-items: center;
-    margin-left: 10px;
-    display: flex;
-    margin:top;
-    padding-bottom: .5%;
-    text-decoration: none;
-    font-size: 1em;
-    color: white;
-  }  
-    
-  .Links{
-    cursor: pointer;
-    color: #f2f2f2;
-    font-size: 3em;
-    padding-right:30%;
-    margin:15px;
-  }
-  
-  a:link {
-    text-decoration: none;
-    color: azure;
-    font-family:'Snowburst One',serif
-  }
-
-  a{
-      color: white;
-  }
-
-  a:hover{
-      color: aqua;
-  }
-  @media (min-width: 484px){
-    .custom-font{
-        
-        display: flex;
-        flex-direction: row;
-
-      }
-  }
-  
-  @media (min-width: 1000px) {
-
-    .Links{
-        font-size: 1.5em;
-    }
-      
-     .burger{
-        display: none;
-      }
-
-    a{
-        display: flex;
-        
-    }
-    .show{
-        transform: translate(0px,-550px)
-    }
-    .showing{
-        padding-left:70%;
-        padding-top:40%;
-        display: flex;
-        flex-direction: row;
-        position: relative;
-      
-    }
-    .custom-font{
-        padding-right:40%;
-        margin-right:6%; 
-        padding-top: 1%;
-        right: 65%;
-        
-      }
-      
-      .header .menu {
-        clear: none;
-        float: left;
-        max-height: none;
-      }
-     
-    }
- */
 
  @import url("https://fonts.googleapis.com/css?family=Snowburst+One");
  
@@ -274,7 +138,7 @@
   
   /* 48em = 768px */
   
-  @media (min-width: 943px) {
+  @media (min-width: 1000px) {
     .header li {
       float: left;
     }
@@ -291,11 +155,11 @@
     }
   }
 
-  @media(max-width: 942px){
+  @media(max-width: 1000px){
         .header .menu-icon{
             position: relative;
             margin-top: 1%;
-            /* width: 100%; */
+           
         }
   }
 
@@ -307,7 +171,18 @@
         margin-top: -20%;
         position: relative;
     }
+    
 }
+
+  @media(width:320px), (height:568px){
+     .header .menu-icon{
+        margin-top: -30%;
+      }
+
+     img{
+        margin-top: 2%
+     }
+  }
   
 
 
