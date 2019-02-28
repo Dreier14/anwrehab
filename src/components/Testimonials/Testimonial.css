@@ -11,8 +11,9 @@
 }
 
 .header-for-testimonials{
+    color: #370080;
     font-size: 3.3em;
-    text-decoration: underline dashed purple;
+    text-decoration: underline solid #370080;
     text-align:center;
     font-family: 'Snowburst One',serif;
 }
@@ -22,10 +23,11 @@
     flex-direction: column;
     margin:7%;
     align-items: center;
-    background: rgba(255, 255, 255, 0.76);
+    background: rgba(255, 255, 255, 0.6);
     text-align: center;
-    border: purple;
-    border-style:dashed;
+    border:#370080;
+    border-width: 1.2px;
+    border-style:solid;
     font-size: 1.2em;
     padding: 2%;
 }

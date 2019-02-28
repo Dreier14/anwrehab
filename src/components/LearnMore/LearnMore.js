@@ -4,12 +4,14 @@ import {Link} from 'react-router-dom';
 import './LearnMore.css';
 import { Col } from 'reactstrap';
 import { Button } from 'reactstrap';
+import Nav from '../Nav/Nav';
 
 
 export default class extends Component {
     render() {
         return (
             <div>
+                <Nav/>
                 <div className="learn-background">
                 
                     <div style={{paddingTop:"100px"}}>

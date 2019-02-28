@@ -3,12 +3,14 @@ import {Link} from 'react-router-dom';
 import LottieError from './LottieError'
 import './ErrorComponent.css'
 import Footer from '../Footer/Footer';
+import Nav from '../Nav/Nav';
 
 
 export default class ErrorComponent extends Component {
     render() {
         return (
         <div>
+            <Nav/>
             <div className="background">
               <div className = "Error">
                   <div className = "Text">

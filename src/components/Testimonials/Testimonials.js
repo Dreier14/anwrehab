@@ -5,6 +5,7 @@ import "./Testimonial.css";
 import Rehab from './Rehab.jpg';
 import { Link } from 'react-router-dom';
 import { Container, Row, Col } from 'reactstrap';
+import Nav from '../Nav/Nav';
 
 export default class Testamonials
  extends Component {
@@ -51,6 +52,7 @@ export default class Testamonials
 
         return (
         <div>
+            <Nav/>
             <div className ="testimonials-background">
                 <div style={{paddingTop: '100px'}}>
                     <div className="header-for-testimonials">Testimonials</div>

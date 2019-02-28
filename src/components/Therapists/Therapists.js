@@ -3,6 +3,7 @@ import axios from 'axios';
 import Footer from '../Footer/Footer';
 import './Therapists.css'
 import { Card, CardImg } from 'reactstrap';
+import Nav from '../Nav/Nav';
 
 
 export default class Therapists extends Component {
@@ -27,7 +28,7 @@ export default class Therapists extends Component {
     }
 
     render() {
-        let allTherapists = this.state.therapistInfo.map(element => {
+        let allTherapists = this.state.therapistInfo ? this.state.therapistInfo.map(element => {
             console.log(element);
             return(
                 <div className="therapists-info" key ={element.id}>
@@ -39,17 +40,18 @@ export default class Therapists extends Component {
                    <div className="break"/>
                    <br/>
                    <br/>
-                </div>
+                </div> 
             )
-        })
+        }): <img width="100px" src ="https://loading.io/spinners/balls/lg.circle-slack-loading-icon.gif"/>
 
         return (
             <div>
+                <Nav/>
                 <div className="therapist-background">
                     <div style={{paddingTop: '100px'}}>
                          <h1> <div align="center" className="therapists-head">Meet Our Team </div></h1>
                          <hr/>
-                         <div> {allTherapists} </div> 
+       <div> {allTherapists} </div>
                      </div>
                 </div>
               <Footer/>

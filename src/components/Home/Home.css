@@ -3,32 +3,36 @@
 @import url("https://fonts.googleapis.com/css?family=Snowburst+One");
 
 .chalkboard{
-    background: url("//nebula.wsimg.com/75fe03dfec8707844b608aeb1fbd614f?AccessKeyId=0F9D1A4ACFCC9D22904E&amp;disposition=0&amp;alloworigin=1");
-    
+    background: #4b00ff38;
+    border-style: solid;
+    border-color: #370080;
+    border-width: 1.2px;
 }
 
-.crayon{
-    width: 12vw;
+.crayon {
+    width: 20vw;
 }
-
 /* .board .card{
     border-style: none;
 } */
 
 .card{
-    border-style: dashed;
-    border-color: purple;
-    border-width: 3px;
+    border-style: solid;
+    border-color: #370080;
+    border-width: 1.2px;
     background: bottom;
 }
 
 .card-text{
-    color: purple;
+    color: black;
+    font-size: 97%;
 }
 
 .card-title{
+    font-size: 2em;
     font-family: 'Snowburst One',serif;
-    color: purple;
+    color: #370080;
+    text-decoration: underline;
 }
 
 .card-body{
@@ -67,20 +71,24 @@
 }
 
 .text-block {
-    border: dashed;
+    border: solid;
     position: absolute;
     width: 27%;
     position: absolute;
     text-align: center;
-    left: 71%;
-    top: 6.5%;
+    left: 68%;
+    top: 5.5%;
     background: rgba(255, 166, 0, 0.795);
-    color: white;
+    color:#d7faf5e8;
     font-family: 'Snowburst One',serif;
 }
 
 .child{
     width: 100%;
+}
+
+.btn{
+    border-radius: 0px;
 }
 
 .btn-secondary{
@@ -96,6 +104,13 @@
 /* for Galaxy S5 */
 
 @media(min-width:600px){
+    
+    .unleashed{
+        margin:5%;
+    }
+    .crayon {
+        width: 14vw;
+    }
 
     .master {
             width: 70%;
@@ -103,10 +118,11 @@
     }
     
     .text-block{
-        left: 62%;
-        top: 6.5%;
+        left: 67%;
+        top: 4.5%;
         width: 12%;
         font-size:2vw;
+        color: antiquewhite;
     }
 
     .outer-container{
