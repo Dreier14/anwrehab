@@ -11,6 +11,13 @@
     font-size: 1.2em;
 }
 
+.loading{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    height: 10vh;
+}
 
 .break{
     border:solid 1px black;

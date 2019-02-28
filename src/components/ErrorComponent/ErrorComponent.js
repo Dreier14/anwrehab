@@ -8,8 +8,9 @@ import Nav from '../Nav/Nav';
 
 export default class ErrorComponent extends Component {
     render() {
+        window.scrollTo(0, 0)
         return (
-        <div>
+        <div>    
             <Nav/>
             <div className="background">
               <div className = "Error">
@@ -25,8 +26,8 @@ export default class ErrorComponent extends Component {
                       <Link to="/" > <LottieError/></Link>
                   </div>
               </div>
-             </div>
-            <Footer/>
+              </div>
+             <Footer/>
         </div>  
             
         );

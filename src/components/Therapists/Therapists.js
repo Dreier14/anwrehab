@@ -10,13 +10,15 @@ export default class Therapists extends Component {
     constructor(){
         super()
         this.state= {
-        therapistInfo: []
+        therapistInfo: null
         }
     }
 
-    componentDidMount(){
+    componentDidMount() {
         this.getTherapist()
+        window.scrollTo(0, 0)
     }
+
 
     getTherapist(){
         axios.get('/api/getInfo').then(response => {
@@ -28,10 +30,10 @@ export default class Therapists extends Component {
     }
 
     render() {
-        let allTherapists = this.state.therapistInfo ? this.state.therapistInfo.map(element => {
+        let allTherapists = this.state.therapistInfo ? this.state.therapistInfo.map((element ,i )=> {
             console.log(element);
             return(
-                <div className="therapists-info" key ={element.id}>
+                <div className="therapists-info" key ={i}>
                      { element.photo == null ? <img className="default-img" src={'https://static.thenounproject.com/png/1095867-200.png'}/> : <img src={element.photo} class="img-thumbnail"/> }
                    <h1>{element.name}</h1>
                    <h2>{element.service}</h2>
@@ -42,7 +44,7 @@ export default class Therapists extends Component {
                    <br/>
                 </div> 
             )
-        }): <img width="100px" src ="https://loading.io/spinners/balls/lg.circle-slack-loading-icon.gif"/>
+        }) : <img className="loading" src ="https://www.pedul.com/images/loading.gif"/>
 
         return (
             <div>
@@ -51,7 +53,7 @@ export default class Therapists extends Component {
                     <div style={{paddingTop: '100px'}}>
                          <h1> <div align="center" className="therapists-head">Meet Our Team </div></h1>
                          <hr/>
-       <div> {allTherapists} </div>
+                             <div> {allTherapists} </div>
                      </div>
                 </div>
               <Footer/>

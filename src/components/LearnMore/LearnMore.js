@@ -9,6 +9,7 @@ import Nav from '../Nav/Nav';
 
 export default class extends Component {
     render() {
+        window.scrollTo(0, 0)
         return (
             <div>
                 <Nav/>

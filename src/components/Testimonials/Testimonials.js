@@ -21,6 +21,7 @@ export default class Testamonials
     }
     componentDidMount(){
         this.getRehabInfo()
+        window.scrollTo(0, 0)
     }
 
     
