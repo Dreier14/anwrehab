@@ -16,7 +16,7 @@ export default class Therapists extends Component {
 
     componentDidMount() {
         this.getTherapist()
-        window.scrollTo(0, 0)
+         window.scrollTo(0, 0)
     }
 
 
@@ -44,7 +44,7 @@ export default class Therapists extends Component {
                    <br/>
                 </div> 
             )
-        }) : <img className="loading" src ="https://www.pedul.com/images/loading.gif"/>
+        }) : <img className="loading" src ="https://www.voya.ie/Interface/Icons/LoadingBasketContents.gif"/>
 
         return (
             <div>

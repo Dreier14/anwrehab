@@ -13,7 +13,6 @@ export default class ErrorComponent extends Component {
         <div>    
             <Nav/>
             <div className="background">
-              <div className = "Error">
                   <div className = "Text">
                        404 Error 
                    <br/>
@@ -25,7 +24,6 @@ export default class ErrorComponent extends Component {
                    <br/>
                       <Link to="/" > <LottieError/></Link>
                   </div>
-              </div>
               </div>
              <Footer/>
         </div>  

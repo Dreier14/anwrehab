@@ -12,7 +12,7 @@ export default class Testamonials
     constructor(){
         super()
         this.state ={
-            getClientInfo:[]
+            getClientInfo:null
 
         
         }
@@ -38,7 +38,7 @@ export default class Testamonials
 
     render() {
 
-        let allInfo = this.state.getClientInfo.map( (e, i)=>{
+        let allInfo = this.state.getClientInfo ? this.state.getClientInfo.map( (e, i)=>{
             console.log(e);
             return(
                 <div className="testimonial-info" key= {i}>
@@ -47,10 +47,9 @@ export default class Testamonials
                   <div> {e.experience} </div>
                   <br/>
                   <div> {e.names} </div>
-                </div>
+                </div> 
             )
-        })
-
+        }) : <img className ="loading" src="https://www.voya.ie/Interface/Icons/LoadingBasketContents.gif"/>
         return (
         <div>
             <Nav/>
