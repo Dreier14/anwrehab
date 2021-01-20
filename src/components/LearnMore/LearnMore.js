@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import Footer from '../Footer/Footer';
-import {Link} from 'react-router-dom';
 import './LearnMore.css';
 import { Col } from 'reactstrap';
 import { Button } from 'reactstrap';
 import Nav from '../Nav/Nav';
+import 'bootstrap';
 
 
 export default class extends Component {
@@ -35,8 +35,19 @@ export default class extends Component {
                                 <br/>
                                 <Button className="button-stuff" href='https://www.facebook.com/aquaticnwritingrehab/'>Go to our Facebook!</Button>
                             </div>
-
-                        {/* <a className="facebook-button" ></a> */}
+                            <br/>
+                            <br/>
+                            <div className="magazine-pic">
+                                <img class="img-fluid" src='https://drive.google.com/uc?export=view&id=1YUyyysqWZoNOHVEMLJkRb2gKXxpNh-Gv'style={{margin:"auto"}}/>
+                                <br/>
+                                <br/>
+                                <img class="img-fluid" src='https://drive.google.com/uc?export=view&id=1Q-FVAKNfZXdo7LnRv9t3fxWbEykMfbBY'style={{margin:"auto"}}/>
+                                <br/>
+                                <br/>
+                                <Col className="mag" xs="auto">Check out our article from <br/> Uptown and So Scottsdale Magazine</Col>
+                                <br/>
+                                <Button className="button-stuff" href='https://issuu.com/richmanmediagroup/docs/ut-0620?fr=sMTg4MjQ2MjMzNw'>Click here for the full edition!</Button>
+                            </div>
                     </div>
                     <br/>
                   </div>

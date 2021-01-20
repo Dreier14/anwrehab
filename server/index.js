@@ -1,25 +1,44 @@
-require( 'dotenv' ).config();
-const path = require('path');
 const express = require( 'express' );
-const bodyParser = require( 'body-parser' );
+const path = require('path');
+require('dotenv').config({ path: path.resolve(__dirname, '../.env') })
+const session = require( 'express-session' );
+const app = express();
 const massive = require( 'massive' );
+const bodyParser = require( 'body-parser' );
 const sM =require('./controllers/nodeMailerController'); 
 const photo = require('./controllers/photoController');
 const pic = require('./controllers/pictureController');
 const tests = require('./controllers/testimonialsController');
 
-const PORT = 3400;
 
-const app = express();
+const {DB_HOST, DB_PORT, DB, DB_USER, DB_PASS} = process.env
+
+const PORT = 3500;
 
 app.use( express.static( `${__dirname}/../build` ) );
 
+app.use(express.json());
+
 app.use(bodyParser.json());
 
+app.use(session({
+  secret: process.env.SESSION_SECRET,
+  resave: false,
+  saveUninitialized: false,
+  cookie: {
+      maxAge: 60 * 60 * 60 * 24 * 14
+  }
+}))
 
-massive(process.env.CONNECTION_STRING).then(db =>{
-    app.set('db',db);
-    
+massive({
+  host: DB_HOST,
+  database: DB,
+  user: DB_USER,
+  password: DB_PASS,
+  port:DB_PORT,
+  ssl: true
+}).then(db =>{
+  app.set('db',db);
 }).catch(err => console.log('Connection error -------------', err));
 
 /**************TESTIMONIAL DATA********************************/

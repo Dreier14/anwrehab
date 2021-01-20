@@ -30,7 +30,7 @@ export default class  extends Component {
                     </div>
                 </div>
                 <br/>
-                <Card style={{borderStyle: "none"}}>
+                <Card >
                     <CardImg  top width="50%" src={Learn}/>
                      <CardBody className="chalkboard" >
                         <img className="crayon" src={logo}/>
@@ -42,7 +42,7 @@ export default class  extends Component {
                 <br/>
                 <Card>
                     <CardImg top width="50%" src={Aqua} alt="Card image cap" />
-                     <CardBody style={{background:"#add8e6a6"}} >
+                     <CardBody className="chalkboard" style={{background:"#add8e6a6"}} >
                         <CardTitle>Aquatics</CardTitle>
                             <CardText>Aquatic Therapy could be just what you've been looking for. Our team specializes in this unique therapeutic technique. We’ve seen major breakthroughs when we get kids in the water and they usually have fun doing it! </CardText>
                     </CardBody>
@@ -50,7 +50,7 @@ export default class  extends Component {
                 <br/>
                 <Card>
                     <CardImg top width="50%" src={Writing} alt="Card image cap" />
-                     <CardBody style={{background:"rgba(255, 200, 0, 0.6)"}}>
+                     <CardBody className="chalkboard" style={{background:"rgba(255, 200, 0, 0.6)"}}>
                         <CardTitle>Handwriting</CardTitle>
                             <CardText>We offer a full range of handwriting services that foster your child’s fine motor growth.​</CardText>
                     </CardBody>
@@ -58,7 +58,7 @@ export default class  extends Component {
                 <br/>
                 <Card>
                     <CardImg top width="50%" src={Therapists} alt="Card image cap" />
-                     <CardBody style={{background:"rgba(17, 187, 22, 0.51)"}}>
+                     <CardBody className="chalkboard" style={{background:"rgba(17, 187, 22, 0.51)"}}>
                         <CardTitle>Therapists</CardTitle>
                                 <CardText>Our staff members are extremely good at what they do. Click to check out the ANW Rehab team.</CardText>
                             <Button><Link to="/Therapists">Meet Our Staff</Link></Button>
@@ -67,7 +67,7 @@ export default class  extends Component {
                 <br/>
                 <Card>
                     <CardImg top width="50%" src={Testimonials} alt="Card image cap" />
-                     <CardBody style={{background: "rgba(255, 248, 25, 0.81)"}}>
+                     <CardBody className="chalkboard" style={{background: "rgba(255, 248, 25, 0.81)"}}>
                         <CardTitle>Testimonials</CardTitle>
                                 <CardText>Click below to read to read some Testimonials from our families.</CardText>
                             <Button><Link to="/Testimonials">Testimonials</Link></Button>
