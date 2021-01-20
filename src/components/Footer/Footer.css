@@ -4,11 +4,9 @@
     left: 0;
     background: rgb(0, 204, 255);;
     width: 100%;
-    color: rgba(248, 248, 248, 0.979);
     text-align: center;
     display: flex;
     justify-content: center;
-    align-items: center;
     flex-direction: column;
     
  }
@@ -27,10 +25,13 @@
     padding: 14px 16px;
     text-decoration: none;
     font-size: 15px;
-    
- 
-   
- }
+}
+
+.copyright{
+    margin-left: 3%;
+
+}
+
 
  ul .footer-menu{
      list-style: none;
@@ -54,3 +55,5 @@
         padding-right:15%;
     }
   }
+
+  

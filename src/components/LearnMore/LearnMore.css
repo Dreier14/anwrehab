@@ -1,19 +1,57 @@
 @import url("https://fonts.googleapis.com/css?family=Snowburst+One");
 
+.btn-secondary{
+    background-color: rgba(205, 211, 221, 0.884) !important;
+    color: rgb(57, 120, 214)!important;
+}
+
 .video{
-    height:400px;
-    width:100%;
+    height: 100%;
+    width: 100%;
     /* padding-left:10%; */
 }
 
+.ndfHFb-c4YZDc-HiaYvf-s2gQvd{
+    background-color: rgba(251, 255, 0, 0.63)!important;
+}
+
+.button-stuff{
+    margin: 0 auto !important;
+    display: table !important;
+}
+
+.magazine-pic{
+    margin: 0 auto !important;
+    display: table !important;
+    width: 100%;
+}
+
+
+.master-learn{
+    height: 100%;
+}
+
 .learn-background{
-    background: rgba(255, 166, 0, 0.781);
-    height:100vh;
+    background: rgba(251, 255, 0, 0.63);
+    height:auto;
+}
+
+.teach-text{
+    font-family: 'Snowburst One',serif;
+    font-size: 200%;
+    text-align: center;
+    margin: auto;
+}
+
+.mag{
+    font-family: 'Snowburst One',serif;
+    font-size: 200%;
+    text-align: center;
 }
 
 .facebook-button{
     position: absolute;
-    top: 83%;
+    top: 100%;
     left: 50%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
@@ -27,10 +65,11 @@
     box-shadow: 0px 10px 14px -7px #276873; 
 }
 
-.facebook-button:hover{
-    color: rgb(57, 120, 214);
-    background-color: rgb(124, 192, 164)
+.btn-secondary:hover{
+    color: rgb(57, 120, 214) !important;
+    background-color: rgb(124, 192, 164) !important;
 }
+
 
 .facebook-text{
     text-align:center;
@@ -38,3 +77,39 @@
     font-family: 'Snowburst One',serif;
 }
 
+.technology{
+    font-size: 1.5em;
+    text-decoration: underline dashed purple;
+    text-align:center;
+    font-family: 'Snowburst One',serif;
+}
+
+@media(min-width: 700px){
+
+    .magazine-pic{
+        width: 50%;
+    }
+
+    .learn-background{
+        height:100%;
+    }
+
+    .facebook-button{
+        top:174%;
+        position: absolute;
+
+    }
+
+    .video{
+        height:60vh;
+        width:50vw;
+        display: flex;
+        flex-direction: column;
+        /* padding-left:10%; */
+    }
+
+    .master-learn{
+        width: 70%;
+        margin: auto;
+    }
+}

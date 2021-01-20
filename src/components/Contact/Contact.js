@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-import './About.css';
+import './Contact.css';
 import Footer from '../Footer/Footer';
+import Nav from '../Nav/Nav';
 
 
 
@@ -63,10 +64,13 @@ export default class Contact extends Component {
     }
 
     render() {
-        
+        window.scrollTo(0, 0)
         return (
         <div>
-            <div className= "mailer-form">
+            <Nav/>
+            <div className="mail-start">
+            <div className="center-it">
+            <div className= "mailer-form" style={{paddingTop: "105px"}}>
                 
                 <div>
                     <h2 className= 'long'>Send Us an Email!</h2>
@@ -114,6 +118,8 @@ export default class Contact extends Component {
                     </div> 
                 </div>
                 <br/>
+            </div>
+            </div>
             </div>
             <Footer/>
         </div>

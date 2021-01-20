@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 import './Footer.css';
-import Login from '../Login/Login';
 import Icon from 'react-icons-kit';
 import { home2 } from 'react-icons-kit/icomoon/home2';
 import {u1F46A} from 'react-icons-kit/noto_emoji_regular/u1F46A';
@@ -47,11 +46,9 @@ export default class Footer extends Component {
                          <ul className="footer-menu">
                             <Wrapper><Link to="/">Home</Link></Wrapper>
                             <Wrapper><Link to="/Contact">Contact</Link></Wrapper>
-                            <Wrapper><Link to="/Mission">Mission</Link></Wrapper>
-                            <Wrapper><a className="Links" onClick={this.showLogin} > Log In </a></Wrapper>
+                            <Wrapper><Link to="/Therapists">Meet Our Team</Link></Wrapper>
                         </ul>
                     <div className= "copyright"> © 2013. Aquatic-N-Writing Rehab. All rights reserved.</div>
-                    <Login open={open} close={this.onCloseModal}  center/>
                 </div>
              </div>
             </div>

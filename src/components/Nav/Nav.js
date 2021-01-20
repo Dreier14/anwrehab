@@ -62,7 +62,7 @@ export default class Nav extends Component {
                     <label className="menu-icon" htmlFor="menu-btn"><span className="navicon"></span></label>
                          <ul className="menu">
                             <Wrapper><Link to="/">Home <Icon icon={home2} size={25}/></Link></Wrapper>
-                            <Wrapper><Link to="/Mission">Mission <Icon icon={u1F46A} size={25}/></Link></Wrapper>
+                            <Wrapper><Link to="/Testimonials">Testimonials<Icon icon={u1F46A} size={25}/></Link></Wrapper>
                             <Wrapper><Link to="/LearnMore">Learn More <Icon icon={u1F4AD} size={25}/></Link></Wrapper>
                         </ul>
              </header>

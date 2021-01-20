@@ -3,13 +3,16 @@ import axios from 'axios';
 import Footer from '../Footer/Footer';
 import "./Testimonial.css";
 import Rehab from './Rehab.jpg';
+import { Link } from 'react-router-dom';
+import { Container, Row, Col } from 'reactstrap';
+import Nav from '../Nav/Nav';
 
 export default class Testamonials
  extends Component {
     constructor(){
         super()
         this.state ={
-            getClientInfo:[]
+            getClientInfo:null
 
         
         }
@@ -18,6 +21,7 @@ export default class Testamonials
     }
     componentDidMount(){
         this.getRehabInfo()
+        window.scrollTo(0, 0)
     }
 
     
@@ -34,27 +38,27 @@ export default class Testamonials
 
     render() {
 
-        let allInfo = this.state.getClientInfo.map( (e, i)=>{
+        let allInfo = this.state.getClientInfo ? this.state.getClientInfo.map( (e, i)=>{
             console.log(e);
             return(
                 <div className="testimonial-info" key= {i}>
-                  <div> Service: {e.services} </div>
+                  <div> {e.services} </div>
                   <br/>
-                  <div> Experience: {e.experience} </div>
+                  <div> {e.experience} </div>
                   <br/>
-                  <div> Name: {e.names} </div>
-                </div>
+                  <div> {e.names} </div>
+                </div> 
             )
-        })
-
+        }) : <img className ="loading" src="https://www.voya.ie/Interface/Icons/LoadingBasketContents.gif"/>
         return (
         <div>
+            <Nav/>
             <div className ="testimonials-background">
                 <div style={{paddingTop: '100px'}}>
                     <div className="header-for-testimonials">Testimonials</div>
                         {allInfo}
                         <br/>
-                        <img className="rehab-photo" src={Rehab}/>
+                       <Link to='/'><img className="rehab-photo" src={Rehab}/></Link>
                         <br/>                   
                      <Footer/>
                 </div>
