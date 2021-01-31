@@ -1,6 +1,6 @@
 const express = require( 'express' );
 const path = require('path');
-require('dotenv').config({ path: path.resolve(__dirname, '../.env') })
+require('dotenv').config()
 const session = require( 'express-session' );
 const app = express();
 const massive = require( 'massive' );
@@ -13,9 +13,11 @@ const tests = require('./controllers/testimonialsController');
 
 const {DB_HOST, DB_PORT, DB, DB_USER, DB_PASS} = process.env
 
-const PORT = 3500;
+const PORT = 3400;
 
 app.use( express.static( `${__dirname}/../build` ) );
+
+// app.use(express.public('./'))
 
 app.use(express.json());
 

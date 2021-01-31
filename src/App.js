@@ -1,9 +1,6 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 import routes from "./routes";
-
-import Footer from './components/Footer/Footer';
 
 class App extends Component {
   render() {

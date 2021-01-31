@@ -14,7 +14,7 @@ import { Card, CardImg, CardText, CardBody,
 
 // import Login from '../Login/Login';
 
-export default class  extends Component {
+export default class Home extends Component {
     render() {
         window.scrollTo(0, 0)
         return (
