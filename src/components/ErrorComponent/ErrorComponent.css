@@ -1,0 +1,35 @@
+.background{
+    background: #00628087;
+    height: 70vh;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+        }
+    
+    .Error{
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        top: 20%;
+        }
+        
+    .Text{
+        text-align: center;
+        font-size: 1.2em;
+        padding-top: 30%;
+        }
+
+        @media (max-width: 600px){
+            /* .contact{
+                padding-right: 1000px
+            }  */
+         
+            .Text{
+                text-align: center;
+                font-size: 1.2em;
+                padding-top: 60%;
+                }
+         
+         }   

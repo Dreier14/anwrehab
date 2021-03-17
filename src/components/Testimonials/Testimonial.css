@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css?family=Snowburst+One");
+
+.testimonials-background{
+    background:url('https://i.imgur.com/t9lZsTc.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    background-attachment: fixed;
+    min-height: 130vh;
+}
+
+.header-for-testimonials{
+    color: #370080;
+    font-size: 3.3em;
+    text-decoration: underline solid #370080;
+    text-align:center;
+    font-family: 'Snowburst One',serif;
+}
+
+.testimonial-info{
+    display: flex;
+    flex-direction: column;
+    margin:7%;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.6);
+    text-align: center;
+    border:#370080;
+    border-width: 1.2px;
+    border-style:solid;
+    font-size: 1.2em;
+    padding: 2%;
+}
+
+.rehab-photo{
+    height:280px;
+    width:280px;
+    display: flex;
+    flex-direction: column;
+    margin:auto;
+}
+
+@media(min-width:500px){
+    .testimonial-info{
+        width:50%;
+        margin: auto;
+        margin-top: 5%;
+    }
+    
+    .rehab-photo{
+        display: flex;
+        flex-direction: column;
+        
+    }
+}

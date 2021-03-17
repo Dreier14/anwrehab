@@ -1,0 +1,150 @@
+/* For Iphone x */
+
+@import url("https://fonts.googleapis.com/css?family=Snowburst+One");
+
+.chalkboard{
+    background: #4b00ff38;
+    border-style: solid;
+    border-color: #370080;
+    border-width: 1.2px;
+}
+
+.crayon {
+    width: 20vw;
+}
+/* .board .card{
+    border-style: none;
+} */
+
+.card{
+    border-style: solid;
+    border-color: #370080;
+    border-width: 1.2px;
+    background: bottom;
+}
+
+.card-text{
+    color: black;
+    font-size: 97%;
+}
+
+.card-title{
+    font-size: 2em;
+    font-family: 'Snowburst One',serif;
+    color: #370080;
+    text-decoration: underline;
+}
+
+.card-body{
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.home-background{
+    background-image: url('https://i.imgur.com/t9lZsTc.png');
+    width:100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+
+.background-image{
+    height: 200%;
+    width:  100%;
+}
+
+.background-image-two{
+    height: 38vh;
+    width:  100%;
+}
+
+
+.learn-picture{
+    display: none;
+}
+
+.container {
+    position: relative;
+}
+
+.text-block {
+    position: absolute;
+    width: 27%;
+    position: absolute;
+    text-align: center;
+    left: 68%;
+    top: 5.5%;
+    background:rgba(138, 244, 146, 0.66);
+    font-family: 'Snowburst One',serif;
+}
+
+.child{
+    width: 100%;
+}
+
+.btn{
+    border-radius: 0px;
+}
+
+.btn-secondary{
+    background-color: rgba(205, 211, 221, 0.884);
+    color: white;
+}
+
+.btn-secondary:hover{
+    color: rgb(57, 120, 214);
+    background-color: rgb(124, 192, 164)
+}
+
+/* for Galaxy S5 */
+
+@media(min-width:600px){
+    
+    .unleashed{
+        margin:5%;
+    }
+    .crayon {
+        width: 14vw;
+    }
+
+    .master {
+            width: 70%;
+            margin-left: 15%;
+    }
+    
+    .text-block{
+        left: 67%;
+        top: 4.5%;
+        width: 12%;
+        font-size:2vw;
+        color: #a615afbd
+    }
+
+    .outer-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .master-container{
+        width: 60%;
+        margin:auto;
+    }
+
+    .snow-text{
+        padding-top:2%;
+    }
+
+    .centered{
+        display: flex;
+        flex-direction: column;
+    }
+
+    
+}
+
+
+
+    
+

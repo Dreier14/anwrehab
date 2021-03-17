@@ -1,0 +1,102 @@
+
+.background{
+    min-height: 100vh;
+}
+
+.mail-start{
+    background: rgba(114, 236, 124, 0.918);
+}
+
+.mailer-form{
+    padding-top: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    font-size: 150%;
+    justify-content: center;
+}
+
+.fields{
+    height: 50px;
+    width: 250px;
+    font-size: 1.2em;
+    border-radius:10px;
+}
+.long{
+    color: black;
+    text-align: center;
+    width: 100%;
+    font-size: 2em;
+}
+
+.intro{
+    color:black;
+    text-align: center;
+    font-size: 3em;
+}
+
+.label-content{
+    font-size: 1.2em;
+    color:black;
+}
+
+.edit-space{
+    font-size: 20pt;
+    background:white;
+    border: 1px solid #bcbec0;
+    color:black;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius:10px;
+    height: 400px;
+    width: 99vw;
+}
+
+.align{
+   padding-left:.30%;
+}
+
+.title{
+    color: white;
+    text-align: center;
+    font-size: 2em;
+    text-decoration: underline white;
+}
+
+.inputfile{
+    background: rgb(20, 201, 224);
+    padding: 10px 20px;
+    color:rgba(114, 236, 124, 0.918);
+    border-radius: 10px;
+    font-size:.75em;
+    
+}
+
+.inputfile:hover{
+    color:rgb(20, 201, 224);
+    background: rgba(252, 252, 32, 0.918);
+}
+
+@media (min-width: 600px){
+   /* .contact{
+       padding-right: 1000px
+   }  */
+
+   .edit-space{
+       height: 400px;
+       width: 75vw;
+   }
+
+}
+
+@media(width:768px){
+    
+    /* .mailer-form{
+        padding-left: 15%;
+    } */
+    
+
+    .mailer{
+        margin-left: 15%;
+    }
+}

@@ -1,0 +1,115 @@
+[debug] [2021-02-05T06:17:52.839Z] ----------------------------------------------------------------------
+[debug] [2021-02-05T06:17:52.841Z] Command:       /usr/local/bin/node /usr/local/bin/firebase init
+[debug] [2021-02-05T06:17:52.841Z] CLI Version:   8.9.0
+[debug] [2021-02-05T06:17:52.841Z] Platform:      darwin
+[debug] [2021-02-05T06:17:52.841Z] Node Version:  v12.18.3
+[debug] [2021-02-05T06:17:52.854Z] Time:          Thu Feb 04 2021 23:17:52 GMT-0700 (Mountain Standard Time)
+[debug] [2021-02-05T06:17:52.855Z] ----------------------------------------------------------------------
+[debug] [2021-02-05T06:17:52.855Z] 
+[debug] [2021-02-05T06:17:52.869Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-02-05T06:17:52.869Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /Users/adamdreier/dev/anwrehab
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  If you want to create a project in a Google Cloud organization or folder, please use "firebase projects:create" instead, and return to this command when you've created the project. 
+[debug] [2021-02-05T06:21:01.895Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-02-05T06:21:01.896Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-02-05T06:21:02.082Z] <<< HTTP RESPONSE 200 {"date":"Fri, 05 Feb 2021 06:21:02 GMT","pragma":"no-cache","expires":"Mon, 01 Jan 1990 00:00:00 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-02-05T06:21:02.100Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects  
+ {"projectId":"anwrehab","name":"anwrehab"}
+[debug] [2021-02-05T06:21:02.862Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Fri, 05 Feb 2021 06:21:02 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=497","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-02-05T06:21:02.870Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.7269803209572478102  
+ 
+[debug] [2021-02-05T06:21:03.476Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Fri, 05 Feb 2021 06:21:03 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=358","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-02-05T06:21:03.983Z] [Project Creation Poller] Retrying task index 0
+[debug] [2021-02-05T06:21:03.984Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.7269803209572478102  
+ 
+[debug] [2021-02-05T06:21:04.601Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Fri, 05 Feb 2021 06:21:04 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=324","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-02-05T06:21:05.604Z] [Project Creation Poller] Retrying task index 0
+[debug] [2021-02-05T06:21:05.605Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.7269803209572478102  
+ 
+[debug] [2021-02-05T06:21:06.239Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Fri, 05 Feb 2021 06:21:06 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=445","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-02-05T06:21:06.240Z] >>> HTTP REQUEST POST https://firebase.googleapis.com/v1beta1/projects/anwrehab:addFirebase  
+ 
+[debug] [2021-02-05T06:21:08.045Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Fri, 05 Feb 2021 06:21:07 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-02-05T06:21:08.045Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/operations/workflows/YmI5ZGZhOWQtZDFlMS00ZjUzLTg5MjEtMWJiYzBhMzA4MGEx  
+ 
+[debug] [2021-02-05T06:21:08.596Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Fri, 05 Feb 2021 06:21:08 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-02-05T06:21:09.098Z] [Add Firebase Poller] Retrying task index 0
+[debug] [2021-02-05T06:21:09.099Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/operations/workflows/YmI5ZGZhOWQtZDFlMS00ZjUzLTg5MjEtMWJiYzBhMzA4MGEx  
+ 
+[debug] [2021-02-05T06:21:10.645Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Fri, 05 Feb 2021 06:21:09 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-02-05T06:21:11.651Z] [Add Firebase Poller] Retrying task index 0
+[debug] [2021-02-05T06:21:11.652Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/operations/workflows/YmI5ZGZhOWQtZDFlMS00ZjUzLTg5MjEtMWJiYzBhMzA4MGEx  
+ 
+[debug] [2021-02-05T06:21:12.385Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Fri, 05 Feb 2021 06:21:12 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-02-05T06:21:14.387Z] [Add Firebase Poller] Retrying task index 0
+[debug] [2021-02-05T06:21:14.388Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/operations/workflows/YmI5ZGZhOWQtZDFlMS00ZjUzLTg5MjEtMWJiYzBhMzA4MGEx  
+ 
+[debug] [2021-02-05T06:21:14.844Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Fri, 05 Feb 2021 06:21:14 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-02-05T06:21:18.846Z] [Add Firebase Poller] Retrying task index 0
+[debug] [2021-02-05T06:21:18.847Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/operations/workflows/YmI5ZGZhOWQtZDFlMS00ZjUzLTg5MjEtMWJiYzBhMzA4MGEx  
+ 
+[debug] [2021-02-05T06:21:19.351Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Fri, 05 Feb 2021 06:21:19 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] 🎉🎉🎉 Your Firebase project is ready! 🎉🎉🎉
+[info] 
+[info] Project information:
+[info]    - Project ID: anwrehab
+[info]    - Project Name: anwrehab
+[info] 
+[info] Firebase console is available at
+[info] https://console.firebase.google.com/project/anwrehab/overview
+[info] i  Using project anwrehab (anwrehab) 
+[info] 
+=== Functions Setup
+[info] 
+[info] A functions directory will be created in your project with a Node.js
+[info] package pre-configured. Functions can be deployed with firebase deploy.
+[info] 
+[debug] [2021-02-05T06:21:19.377Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-02-05T06:21:19.378Z] > authorizing via signed-in user
+[debug] [2021-02-05T06:21:19.378Z] [iam] checking project anwrehab for permissions ["firebase.projects.get"]
+[debug] [2021-02-05T06:21:19.380Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/anwrehab:testIamPermissions  
+ {"permissions":["firebase.projects.get"]}
+[debug] [2021-02-05T06:21:20.025Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Fri, 05 Feb 2021 06:21:19 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=526","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-02-05T06:21:20.027Z] >>> HTTP REQUEST POST https://serviceusage.googleapis.com/v1/projects/anwrehab/services/cloudfunctions.googleapis.com:enable  
+ 
+[debug] [2021-02-05T06:21:20.027Z] >>> HTTP REQUEST POST https://serviceusage.googleapis.com/v1/projects/anwrehab/services/runtimeconfig.googleapis.com:enable  
+ 
+[debug] [2021-02-05T06:21:20.987Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Fri, 05 Feb 2021 06:21:20 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-02-05T06:21:21.602Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Fri, 05 Feb 2021 06:21:21 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] ✔  Wrote functions/package.json 
+[info] ✔  Wrote functions/.eslintrc.json 
+[info] ✔  Wrote functions/index.js 
+[info] ✔  Wrote functions/.gitignore 
+[debug] [2021-02-05T06:33:58.739Z] Error: write EIO
+    at afterWriteDispatched (internal/stream_base_commons.js:154:25)
+    at writeGeneric (internal/stream_base_commons.js:145:3)
+    at WriteStream.Socket._writeGeneric (net.js:786:11)
+    at WriteStream.Socket._write (net.js:798:8)
+    at doWrite (_stream_writable.js:403:12)
+    at writeOrBuffer (_stream_writable.js:387:5)
+    at WriteStream.Writable.write (_stream_writable.js:318:11)
+    at EventEmitter.signalExit.alwaysLast (/usr/local/lib/node_modules/firebase-tools/node_modules/restore-cursor/index.js:7:18)
+    at EventEmitter.emit (events.js:315:20)
+    at EventEmitter.emit (domain.js:483:12)
+    at emit (/usr/local/lib/node_modules/firebase-tools/node_modules/signal-exit/index.js:78:11)
+    at process.listener (/usr/local/lib/node_modules/firebase-tools/node_modules/signal-exit/index.js:94:7)
+    at process.emit (events.js:315:20)
