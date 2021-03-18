@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import Footer from '../Footer/Footer';
 import './Therapists.css'
-import { Card, CardImg } from 'reactstrap';
 import Nav from '../Nav/Nav';
 
 

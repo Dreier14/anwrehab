@@ -26,7 +26,7 @@ export default class Testamonials
         axios.get('/api/getTests').then(response => {
             console.log(response)
             this.setState({      
-               getClientInfo: response.data.testimonials
+               getClientInfo: response.data
                
             })
         }).catch(err => console.log("Cannot Retrieve Rehab Testimonials", err));

@@ -1,3 +1,4 @@
+
 let testimonials=[
     {
         name:"Daniel H.",
@@ -28,7 +29,7 @@ let testimonials=[
 
 module.exports={
     getTestamonials:(req, res) =>{
-        let data = testimonials.map((element) => {
+       let data = testimonials.map((element) => {
             return element
        });
        res.status(200).json(data)
