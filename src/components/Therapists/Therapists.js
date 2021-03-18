@@ -23,7 +23,7 @@ export default class Therapists extends Component {
     getTherapist(){
         axios.get('/api/getInfo').then(response => {
             this.setState({
-                therapistInfo: response.data.getTherapistData
+                therapistInfo: response.data
             })
         }).catch(err => console.log("Cannot Retrieve Photo Data", err));
     }

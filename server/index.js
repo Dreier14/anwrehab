@@ -11,7 +11,7 @@ const tests = require('./controllers/testimonialsController');
 
 const {APP_PORT, DB_HOST, DB_PORT, DB, DB_USER, DB_PASS} = process.env
 
-app.use(express.static(path.join(__dirname, '/../build')));
+app.use( express.static( `${__dirname}/../build` ) );
 
 app.use(express.json());
 
