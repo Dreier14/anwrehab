@@ -12,11 +12,11 @@ const tests = require('./controllers/testimonialsController');
 
 const {DB_HOST, DB_PORT, DB, DB_USER, DB_PASS} = process.env
 
-const PORT = 3400;
+const PORT = 3500;
+
 
 app.use(express.static(path.join(__dirname, '/../build')));
-
-// app.use(express.public('./'))
+// app.use(express.static(__dirname + '/public'));
 
 app.use(express.json());
 
@@ -52,9 +52,9 @@ app.get('/api/getInfo', therapists.getTherapistData);
 app.post('/api/sendmail', sM.sendMail);
 
 
-// app.get('*', (req, res)=>{
-//   res.sendFile(path.join(__dirname, '../build/index.html'));
-// })
+app.get('*', (req, res)=>{
+  res.sendFile(path.join(__dirname, '../build/index.html'));
+})
 
 
 app.listen(PORT, () => {
