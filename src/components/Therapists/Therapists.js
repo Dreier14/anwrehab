@@ -22,19 +22,18 @@ export default class Therapists extends Component {
 
     getTherapist(){
         axios.get('/api/getInfo').then(response => {
-            console.log(response, "HEY YOU GOT DATA")
             this.setState({
-                therapistInfo: response.data
+                therapistInfo: response.data.getTherapistData
             })
         }).catch(err => console.log("Cannot Retrieve Photo Data", err));
     }
 
     render() {
         let allTherapists = this.state.therapistInfo ? this.state.therapistInfo.map((element ,i )=> {
-            console.log(element);
+            
             return(
                 <div className="therapists-info" key ={i}>
-                     { element.photo == null ? <img className="default-img" src={'https://static.thenounproject.com/png/1095867-200.png'}/> : <img src={element.photo} class="img-thumbnail"/> }
+                     { element.photo == null ? <img className="default-img" src={'https://static.thenounproject.com/png/1095867-200.png'}/> : <img src={element.photo} className="img-thumbnail"/> }
                    <h1>{element.name}</h1>
                    <h2>{element.service}</h2>
                    <div className="therapist-text">{element.information}</div>

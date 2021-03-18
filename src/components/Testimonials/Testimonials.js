@@ -14,20 +14,19 @@ export default class Testamonials
         this.state ={
             getClientInfo: null
         }
-
-       
     }
+
+
     componentDidMount(){
         this.getRehabInfo()
         window.scrollTo(0, 0)
     }
 
-    
     getRehabInfo(){
         axios.get('/api/getTests').then(response => {
             console.log(response)
             this.setState({      
-               getClientInfo: response.data
+               getClientInfo: response.data.testimonials
                
             })
         }).catch(err => console.log("Cannot Retrieve Rehab Testimonials", err));

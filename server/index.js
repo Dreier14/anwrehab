@@ -1,6 +1,6 @@
+require('dotenv').config()
 const express = require( 'express' );
 const path = require('path');
-require('dotenv').config()
 const session = require( 'express-session' );
 const app = express();
 const massive = require( 'massive' );
@@ -9,14 +9,9 @@ const sM =require('./controllers/nodeMailerController');
 const therapists = require('./controllers/therapistsController');
 const tests = require('./controllers/testimonialsController');
 
-
-const {DB_HOST, DB_PORT, DB, DB_USER, DB_PASS} = process.env
-
-const PORT = 3500;
-
+const {APP_PORT, DB_HOST, DB_PORT, DB, DB_USER, DB_PASS} = process.env
 
 app.use(express.static(path.join(__dirname, '/../build')));
-// app.use(express.static(__dirname + '/public'));
 
 app.use(express.json());
 
@@ -57,6 +52,6 @@ app.get('*', (req, res)=>{
 })
 
 
-app.listen(PORT, () => {
-    console.log(`Hey your server is up and working on port ${PORT}🚀`)
+app.listen(APP_PORT, () => {
+    console.log(`Hey your server is up and working on port ${APP_PORT}🚀`)
 })
