@@ -33,7 +33,7 @@ export default class Therapists extends Component {
             
             return(
                 <div className="therapists-info" key ={i}>
-                     { element.photo == null ? <img className="default-img" src={'https://static.thenounproject.com/png/1095867-200.png'}/> : <img src={element.photo} className="img-thumbnail"/> }
+                     { element.photo == null ? <img className="img-thumbnail" src={'https://st2.depositphotos.com/4111759/12123/v/600/depositphotos_121233300-stock-illustration-female-default-avatar-gray-profile.jpg'}/> : <img src={element.photo} className="img-thumbnail"/> }
                    <h1>{element.name}</h1>
                    <h2>{element.service}</h2>
                    <div className="therapist-text">{element.information}</div>
@@ -50,7 +50,7 @@ export default class Therapists extends Component {
                 <Nav/>
                 <div className="therapist-background">
                     <div style={{paddingTop: '100px'}}>
-                         <h1> <div align="center" className="therapists-head">Meet Our Team </div></h1>
+                         <h1> <div align="center" className="therapists-head">Meet Our Team</div></h1>
                          <hr/>
                              <div> {allTherapists} </div>
                      </div>

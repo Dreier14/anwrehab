@@ -61,7 +61,7 @@ export default class Home extends Component {
                      <CardBody className="chalkboard" style={{background:"rgba(17, 187, 22, 0.51)"}}>
                         <CardTitle>Therapists</CardTitle>
                                 <CardText>Our staff members are extremely good at what they do. Click to check out the ANW Rehab team.</CardText>
-                            <Button><Link to="/Therapists">Meet Our Staff</Link></Button>
+                            <Button><Link to="/Therapists">Meet Our Team</Link></Button>
                     </CardBody>
                 </Card>
                 <br/>
