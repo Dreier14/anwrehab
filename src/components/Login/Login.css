@@ -1,0 +1,21 @@
+
+.password-input-container {
+    height: calc(1.5em + .75rem + 2px);
+    display: flex;
+}
+
+.form-control.password {
+    /* width: 90%; */
+    height: 100%;
+}
+
+.btn.password-btn {
+    width: 10%;
+    border: solid 1px #6c757d;
+    height: 100%;
+}
+
+.remember-me-checkbox-container > label {
+    margin-top: 10px;
+    margin-left: 10px;
+}

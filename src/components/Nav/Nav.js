@@ -4,9 +4,11 @@ import './Nav.css';
 import styled from 'styled-components';
 import Icon from 'react-icons-kit';
 import { home2 } from 'react-icons-kit/icomoon/home2';
+import { enter } from 'react-icons-kit/icomoon/enter';
 import {u1F46A} from 'react-icons-kit/noto_emoji_regular/u1F46A';
 import {u1F4AD} from 'react-icons-kit/noto_emoji_regular/u1F4AD';
 import Logo from './logo.png';
+import Login from '../Login/Login';
 
 const Wrapper = styled.li`
 font-size:1.3em`
@@ -15,7 +17,8 @@ export default class Nav extends Component {
     constructor(){
         super()
         this.state = {
-           toggle: false 
+           toggle: false,
+           openLoginModal: false
         }
     }
     
@@ -27,6 +30,19 @@ export default class Nav extends Component {
             }
         })
     }
+
+    toggleLoginModal = () => {
+        this.setState(prevState => {
+            return {
+                openLoginModal: !prevState.openLoginModal
+            }
+        });
+    }
+
+    closeLoginModal = () => {
+        this.setState({openLoginModal: false});
+    }
+
     render() {
 
         const hamburger = this.state.toggle ? 'header-menu show' : 'header-menu hide'
@@ -59,13 +75,19 @@ export default class Nav extends Component {
               </Link>
 
                 <input className="menu-btn" type="checkbox" id="menu-btn"/>
-                    <label className="menu-icon" htmlFor="menu-btn"><span className="navicon"></span></label>
-                         <ul className="menu">
-                            <Wrapper><Link to="/">Home <Icon icon={home2} size={25}/></Link></Wrapper>
-                            <Wrapper><Link to="/Testimonials">Testimonials<Icon icon={u1F46A} size={25}/></Link></Wrapper>
-                            <Wrapper><Link to="/LearnMore">Learn More <Icon icon={u1F4AD} size={25}/></Link></Wrapper>
-                        </ul>
+                <label className="menu-icon" htmlFor="menu-btn"><span className="navicon"></span></label>
+                <ul className="menu">
+                    <Wrapper><Link to="/">Home <Icon icon={home2} size={25}/></Link></Wrapper>
+                    <Wrapper><Link to="/Testimonials">Testimonials<Icon icon={u1F46A} size={25}/></Link></Wrapper>
+                    <Wrapper><Link to="/LearnMore">Learn More <Icon icon={u1F4AD} size={25}/></Link></Wrapper>
+                    <Wrapper><button className="btn" onClick={this.toggleLoginModal}>Login <Icon icon={enter} size={25}/></button></Wrapper>
+                </ul>
              </header>
+             <Login 
+                isModalOpen={this.state.openLoginModal}
+                toggleModal={this.toggleLoginModal}
+                closeModal={this.closeLoginModal}
+             />
             </div>
         );
     }
