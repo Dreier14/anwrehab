@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import './Home.css';
 import Footer from '../Footer/Footer';
+// import EventSchedular from '../Dashboard/EventSchedular/EventSchedular';
+import Calendar from '../Calendar/Calendar';
 import Aqua from "./Aqua.jpg";
 import Therapists from "./Therapists.jpg";
 import Writing from "./Writing.jpg";
@@ -11,10 +13,16 @@ import logo from "./logo.png";
 import Nav from '../Nav/Nav';
 import { Card, CardImg, CardText, CardBody,
     CardTitle, CardSubtitle, Button } from 'reactstrap';
+import $ from 'jquery';
+// import '../../calendar';
 
 // import Login from '../Login/Login';
 
 export default class Home extends Component {
+    constructor() {
+        super();
+    }
+
     render() {
         window.scrollTo(0, 0)
         return (
@@ -23,6 +31,7 @@ export default class Home extends Component {
             <div className ="home-background">
             <br/>
             <div  className="master" style={{paddingTop:"95px"}}>
+            <Calendar />
            <div class="lead-container">
                 <img className="child" src="//nebula.wsimg.com/99c0f18d164056a37b38857e04c11921?AccessKeyId=0F9D1A4ACFCC9D22904E&amp;disposition=0&amp;alloworigin=1" width="100%"/>
                     <div class="text-block"> 
