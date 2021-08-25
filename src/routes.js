@@ -6,6 +6,7 @@ import LearnMore from './components/LearnMore/LearnMore';
 import Therapists from './components/Therapists/Therapists';
 import ErrorComponent from './components/ErrorComponent/ErrorComponent';
 import Testimonials from './components/Testimonials/Testimonials';
+import Dashboard from './components/Dashboard/Dashboard';
 
 
 export default
@@ -16,6 +17,7 @@ export default
            <Route path ='/LearnMore' component={ LearnMore }/>
            <Route path ='/Therapists' component={ Therapists }/>
            <Route path ='/Testimonials' component={ Testimonials }/>
+           <Route path ='/Dashboard' component={ Dashboard }/>
            <Route component={ ErrorComponent}/>
         </Switch>
         );

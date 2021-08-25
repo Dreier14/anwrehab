@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
 import {Link} from 'react-router-dom';
+import { connect } from 'react-redux';
 import './Nav.css';
 import styled from 'styled-components';
 import Icon from 'react-icons-kit';
 import { home2 } from 'react-icons-kit/icomoon/home2';
 import { enter } from 'react-icons-kit/icomoon/enter';
+import { meter } from 'react-icons-kit/icomoon/meter';
 import {u1F46A} from 'react-icons-kit/noto_emoji_regular/u1F46A';
 import {u1F4AD} from 'react-icons-kit/noto_emoji_regular/u1F4AD';
 import Logo from './logo.png';
@@ -13,7 +15,7 @@ import Login from '../Login/Login';
 const Wrapper = styled.li`
 font-size:1.3em`
 
-export default class Nav extends Component {
+class Nav extends Component {
     constructor(){
         super()
         this.state = {
@@ -45,7 +47,8 @@ export default class Nav extends Component {
 
     render() {
 
-        const hamburger = this.state.toggle ? 'header-menu show' : 'header-menu hide'
+        const hamburger = this.state.toggle ? 'header-menu show' : 'header-menu hide';
+        const { currentUser } = this.props;
         return (
          
             <div>
@@ -80,6 +83,7 @@ export default class Nav extends Component {
                     <Wrapper><Link to="/">Home <Icon icon={home2} size={25}/></Link></Wrapper>
                     <Wrapper><Link to="/Testimonials">Testimonials<Icon icon={u1F46A} size={25}/></Link></Wrapper>
                     <Wrapper><Link to="/LearnMore">Learn More <Icon icon={u1F4AD} size={25}/></Link></Wrapper>
+                    {currentUser.id && <Wrapper><Link to="/Dashboard">Dashboard<Icon icon={meter} size={25}/></Link></Wrapper>}
                     <Wrapper><button className="btn" onClick={this.toggleLoginModal}>Login <Icon icon={enter} size={25}/></button></Wrapper>
                 </ul>
              </header>
@@ -92,3 +96,9 @@ export default class Nav extends Component {
         );
     }
 }
+
+const mapStateToProps = state => ({
+    currentUser: state.auth.currentUser
+});
+
+export default connect(mapStateToProps)(Nav);

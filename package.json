@@ -62,5 +62,8 @@
     "/api": {
       "target": "http://localhost:3500"
     }
+  },
+  "devDependencies": {
+    "cypress": "^8.3.0"
   }
 }

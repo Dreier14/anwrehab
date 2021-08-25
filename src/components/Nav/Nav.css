@@ -11,6 +11,17 @@
     font-family: 'Snowburst One',serif;
     color: rgba(25, 88, 206, 0.836);
   }
+
+  .menu > li > button {
+    display: block;
+    padding: 20px 20px;
+    border-right: 1px dashed rgb(255, 255, 255);
+    text-decoration: none;
+    font-family: 'Snowburst One',serif;
+    color: rgba(25, 88, 206, 0.836);
+    font-size: 1em;
+
+  }
   
   /* header */
   
