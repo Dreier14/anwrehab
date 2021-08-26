@@ -1,4 +1,4 @@
-
+const { app } = require('../index');
 let testimonials=[
     {
         name:"Daniel H.",
@@ -26,12 +26,42 @@ let testimonials=[
         experience:"We've worked with Shayna and now Larizza. We used Shayna as both a Handwriting without Tears coach and as an OT.  She is so patient and encouraging that our son (who doesn't need therapy) wants to do the activities!"
     }
 ]
+const controllerMethods = {
+    getTestimonials:(req, res) =>{
+        let data = testimonials.map((element) => {
+             return element
+        });
 
-module.exports={
-    getTestamonials:(req, res) =>{
-       let data = testimonials.map((element) => {
-            return element
-       });
-       res.status(200).json(data)
-    }
-}
+        return res.status(200).json(data)
+    },
+    createTestimonials: async (req, res) => {
+        const orm = req.app.get('orm'),
+              { id } = req.session.user,
+              { userId, name, servicesProvided, experience } = req.body;
+        
+        await orm.modify('create_testimonial', { userId, name, servicesProvided, experience, createdBy: id });
+
+        return res.json({success: true});
+    },
+    updateTestimonials: async (req, res) => {
+        const orm = req.app.get('orm'),
+              { id } = req.session.user,
+              { userId, name, servicesProvided, experience } = req.body,
+              { testimonial_id } = req.params;
+        
+        await orm.modify('update_testimonial', { userId, name, servicesProvided, experience, modifiedBy: id, testimonialId: testimonial_id });
+
+        return res.json({success: true});
+    },
+    deleteTestimonials: async (req, res) => {
+        const orm = req.app.get('orm'),
+              { id } = req.session.user,
+              { testimonial_id } = req.params;
+        
+        await orm.modify('delete_testimonial', { testimonialId: testimonial_id, deletedBy: id });
+
+        return res.json({success: true});
+    },
+};
+
+module.exports = controllerMethods;

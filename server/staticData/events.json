@@ -1,0 +1,18 @@
+{
+    "data": [
+        {
+            "title": "Speech Visit",
+            "clientFormJson": "{firstName: 'Test', lastName: 'Client', email: 'test.client@mail.com', ...otherstuff}",
+            "appointmentTime": "08/02/2020 08:00:00",
+            "rescheduledInd": false,
+            "therapistId": 2
+        },
+        {
+            "title": "Speech Visit",
+            "clientFormJson": "{firstName: 'Test', lastName: 'Client', email: 'test.client@mail.com', ...otherstuff}",
+            "appointmentTime": "08/12/2020 08:00:00",
+            "rescheduledInd": false,
+            "therapistId": 2
+        }
+    ]
+}

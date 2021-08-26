@@ -1,0 +1,22 @@
+INSERT INTO events
+(
+    description,
+    event_form,
+    event_time,
+    lk_event_type_id,
+    lk_event_status_id,
+    therapist_id,
+    created_by,
+    created_datetime
+)
+values
+(
+    ${description},
+    ${eventForm},
+    ${eventTime},
+    ${lkEventTypeId},
+    ${lkEventStatusId},
+    ${therapistId},
+    ${createdBy},
+    now()
+);

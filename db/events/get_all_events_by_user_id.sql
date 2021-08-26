@@ -1,0 +1,1 @@
+select * from events where therapist_id = ${userId};

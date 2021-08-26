@@ -1,3 +1,5 @@
+const authUtils = require('../utils/auth');
+
 let therapists = [
     {
         id: 1,
@@ -120,12 +122,34 @@ let therapists = [
     },
 ]
 
-
-module.exports ={
-    getTherapistData : (req, res) =>{
+const controllerMethods = {
+    getTherapistData: (req, res) =>{
+        const orm = req.app.get('orm');
+        console.log("ORM:", orm);
         let data = therapists.map((element) => {
             return element
        });
        res.status(200).json(data)
+    },
+    updateTherapists: async (req, res) => {
+        const orm = req.app.get('orm'),
+              { id } = req.session.user,
+              { username, photo, firstName, middleName, lastName, information, password, lkServiceId } = req.body,
+              hashedPassword = authUtils.hashPassword(password),
+              { therapist_id } = req.params;
+
+        await orm.modify('update_therapist', { username, photo, firstName, middleName, lastName, information, password: hashedPassword, lkServiceId, therapistId: therapist_id, modifiedBy: id });
+
+        return res.json({success: true});
+    },
+    deleteTherapists: async (req, res) => {
+        const orm = req.app.get('orm'),
+              { therapist_id } = req.params;
+
+        await orm.modify('delete_therapist', { therapistId: therapist_id });
+
+        return res.json({success: true});
     }
-}
+};
+
+module.exports = controllerMethods;
