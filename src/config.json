@@ -1,5 +1,6 @@
 {
     "server": {
-        "local": "http://localhost:3500/api"
+        "local": "http://localhost:3500/api",
+        "prod": "https://anwrehab.com/api"
     }
 }

@@ -46,8 +46,7 @@ export default class Testamonials
             )
         }) : <img className ="loading" src="https://www.voya.ie/Interface/Icons/LoadingBasketContents.gif"/>
         return (
-        <div>
-            <Nav/>
+        <React.Fragment>
             <div className ="testimonials-background">
                 <div style={{paddingTop: '100px'}}>
                     <div className="header-for-testimonials">Testimonials</div>
@@ -58,7 +57,7 @@ export default class Testamonials
                      <Footer/>
                 </div>
             </div>
-         </div>
+         </React.Fragment>
         );
     }
 }

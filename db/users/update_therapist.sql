@@ -5,8 +5,8 @@ set username = ${username},
     middle_name = ${middleName},
     last_name = ${lastName},
     information = ${information},
-    password = ${password}
+    important_fl = ${importantFl},
     lk_service_id = ${lkServiceId},
     modified_by = ${modifiedBy},
     modified_datetime = now()
-where id = ${therapistId};
+where lk_role_id = 3 and id = ${therapistId};

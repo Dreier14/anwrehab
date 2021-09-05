@@ -1,4 +1,6 @@
-const { app } = require('../index');
+
+const adminUtils = require('../utils/admin');
+const authUtils = require('../utils/auth');
 let testimonials=[
     {
         name:"Daniel H.",
@@ -27,38 +29,63 @@ let testimonials=[
     }
 ]
 const controllerMethods = {
-    getTestimonials:(req, res) =>{
-        let data = testimonials.map((element) => {
-             return element
-        });
+    getTestimonials: async (req, res) =>{
+        const orm = req.app.get('orm'),
+              { id } = req.session.user.info;
+        let testimonials;
+        
+        if(await authUtils.isAdmin(req)) {
+            testimonials = await orm.query(
+                adminUtils.folders.testimonials,
+                'get_all_testimonials'
+            );
+        } else {
+            testimonials = await orm.query(
+                adminUtils.folders.testimonials,
+                'get_testimonials_by_user_id',
+                { userId: id }
+            );
+        }
 
-        return res.status(200).json(data)
+        return res.json({ testimonials });
     },
     createTestimonials: async (req, res) => {
         const orm = req.app.get('orm'),
-              { id } = req.session.user,
-              { userId, name, servicesProvided, experience } = req.body;
+              { id } = req.session.user.info,
+              { userId, name, servicesProvided, experience, lkTestimonialStatusId, importantFl } = req.body;
         
-        await orm.modify('create_testimonial', { userId, name, servicesProvided, experience, createdBy: id });
+        await orm.modify(
+            adminUtils.folders.testimonials,
+            'create_testimonial', 
+            { userId, name, servicesProvided, experience, lkTestimonialStatusId, importantFl, createdBy: id }
+        );
 
         return res.json({success: true});
     },
     updateTestimonials: async (req, res) => {
         const orm = req.app.get('orm'),
-              { id } = req.session.user,
-              { userId, name, servicesProvided, experience } = req.body,
+              { id } = req.session.user.info,
+              { userId, name, servicesProvided, experience, lkTestimonialStatusId, importantFl } = req.body,
               { testimonial_id } = req.params;
         
-        await orm.modify('update_testimonial', { userId, name, servicesProvided, experience, modifiedBy: id, testimonialId: testimonial_id });
+        await orm.modify(
+            adminUtils.folders.testimonials,
+            'update_testimonial', 
+            { userId, name, servicesProvided, experience, lkTestimonialStatusId, importantFl, modifiedBy: id, testimonialId: testimonial_id }
+        );
 
         return res.json({success: true});
     },
     deleteTestimonials: async (req, res) => {
         const orm = req.app.get('orm'),
-              { id } = req.session.user,
+              { id } = req.session.user.info,
               { testimonial_id } = req.params;
         
-        await orm.modify('delete_testimonial', { testimonialId: testimonial_id, deletedBy: id });
+        await orm.modify(
+            adminUtils.folders.testimonials,
+            'delete_testimonial', 
+            { testimonialId: testimonial_id, deletedBy: id }
+        );
 
         return res.json({success: true});
     },

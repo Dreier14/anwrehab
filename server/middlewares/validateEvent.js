@@ -5,7 +5,7 @@ module.exports = {
               newEventValues = Object.values({ description, eventTime, lkEventTypeId, lkEventStatusId, therapistId }),
               isInvalidEvent = newEventValues.some(val => !val);
         
-        if(isInvalidEvent) return res.status(400);
+        if(isInvalidEvent) return res.status(400).json({success: false});
         
         next();
     }

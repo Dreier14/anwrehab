@@ -10,8 +10,7 @@ export const PERSIST_LOGOUT = 'PERSIST_LOGOUT';
     Initial State
 */
 export const initialState = {
-    currentUser: new Map(),
-    accessToken: {},
+    currentUser: {},
     expirationDate: undefined
 };
 
@@ -20,16 +19,16 @@ export default (state=initialState, action) => {
         case PERSIST_LOGIN:
             return _.cloneDeep({
                         ...state,
-                        currentUser: action.userInfo,
-                        accessToken: action.accessToken,
-                        expirationDate: moment().add(14, 'd').utc(true)
+                        currentUser: action.info,
+                        expirationDate: moment().add(14, 'd').utc(true),
+                        // dashboardData: action.dashboardData
                     });
         case PERSIST_LOGOUT:
             return _.cloneDeep({
                         ...state,
-                        currentUser: {},
-                        accessToken: {},
-                        expirationDate: undefined
+                        currentUser: initialState.currentUser,
+                        expirationDate: undefined,
+                        // dashboardData: initialState.dashboardData
                     });
         default:
             return state;

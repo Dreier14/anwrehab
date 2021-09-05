@@ -12,6 +12,8 @@ import Checkbox from './Checkbox';
 import Input from './Input';
 import { login } from '../../redux/actions/authActions';
 import { connect } from 'react-redux';
+import { withRouter } from 'react-router-dom';
+import AuthApi from '../../api/AuthApi';
 import './Login.css';
 
 
@@ -29,25 +31,38 @@ class AnwRehabLogin extends Component {
     });
 
     handleReset() {
+        const { closeModal } = this.props;
         this.loginForm.reset();
+        closeModal();
     }
 
-    login(e) {
+    async login(e) {
         e.preventDefault();
-        const { dispatch } = this.props;
-        const { username, password } = this.loginForm.value;
-        dispatch(login(username, password));
+        const { closeModal, dispatch, history } = this.props;
+        const { username, password, rememberMe } = this.loginForm.value;
+        // try {
+        //     const loggedInUser = await AuthApi.login({ username, password, rememberMe })
+        //     localStorage.setItem("user", JSON.stringify(loggedInUser));
+        // } catch(error) {
+        //     console.log("Error:", error);
+            
+        // } finally {
+        //     // dispatch(removeApiCallInProgress());
+        // }
+        dispatch(login({ username, password, rememberMe }));
+        this.handleReset();
+        setTimeout(() =>  history.push('/Dashboard'), 2000);
     }
 
     render() {
         const { isModalOpen, toggleModal, closeModal } = this.props;
         return (
             <div style={{height: '20em'}}>
-                <Modal isOpen={isModalOpen} toggle={toggleModal}>
+                <Modal id="login-modal-container" isOpen={isModalOpen} toggle={toggleModal}>
                     <FieldGroup
                         control={this.loginForm}
                         render={({_, invalid}) => (
-                                <form onSubmit={this.login}>
+                                <form onSubmit={this.login} >
                                     <ModalHeader toggle={closeModal}>
                                         <p>Login</p>
                                     </ModalHeader>
@@ -57,8 +72,8 @@ class AnwRehabLogin extends Component {
                                         <Checkbox name="rememberMe" label="Remember Me" />
                                     </ModalBody>
                                     <ModalFooter>
-                                        <button className="btn btn-secondary" type="button" onClick={this.handleReset}>Cancel</button>
-                                        <button className="btn btn-primary" type="submit" disabled={invalid}>Login</button>
+                                        <button id="cancel-button" className="btn btn-secondary" type="button" onClick={this.handleReset}>Cancel</button>
+                                        <button id="login-submit-button" className="btn btn-primary" type="submit" disabled={invalid}>Login</button>
                                     </ModalFooter>
                                 </form>
                         )}
@@ -76,7 +91,7 @@ AnwRehabLogin.propTypes = {
 };
 
 const mapStateToProps = state => ({
-    currentUser: state.currentUser
+    currentUser: state.auth.currentUser
 });
 
-export default connect(mapStateToProps)(AnwRehabLogin);
+export default withRouter(connect(mapStateToProps)(AnwRehabLogin));

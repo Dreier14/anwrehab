@@ -3,12 +3,12 @@ class Orm {
         this.database = db;
     }
 
-    async query(queryName, args) {
-        return await this.database[queryName](args);
+    async query(folderName, queryName, args = null) {
+        return args ? await this.database[folderName][queryName](args) : await this.database[folderName][queryName]();
     }
 
-    async modify(modifyQueryName, args) {
-        return await this.database[modifyQueryName](args);
+    async modify(folderName, modifyQueryName, args) {
+        return await this.database[folderName][modifyQueryName](args);
     }
 }
 

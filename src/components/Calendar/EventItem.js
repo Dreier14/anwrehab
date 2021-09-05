@@ -4,7 +4,7 @@ import _ from 'lodash';
 import { EventStatusConstants, EventTypeConstants } from '../../constants/events';
 
 const EventItem = ({ description, createdDatetime, createdBy, eventTime, lkEventTypeId, lkEventStatusId, onClick }) => {
-    debugger;
+    // debugger;
     return (
         <span 
             onClick={_ => onClick({ description, createdDatetime, createdBy, eventTime, lkEventTypeId, lkEventStatusId })} 

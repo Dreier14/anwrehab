@@ -38,6 +38,7 @@ export default class AnwRehabInput extends Component {
                     render={({handler, touched, hasError, meta}) => (
                         <div className={isPasswordInput && 'password-input-container'}>
                             <input 
+                                name={name}
                                 className={`form-control ${isPasswordInput && 'password'}`}
                                 placeholder={`Enter ${meta.label}`} 
                                 {...handler()}
@@ -46,7 +47,8 @@ export default class AnwRehabInput extends Component {
                             />
                             {
                                 isPasswordInput &&
-                                <button 
+                                <button
+                                    id="see-password-button"
                                     type="button"
                                     onClick={this.togglePasswordVisibility}
                                     className='btn password-btn'

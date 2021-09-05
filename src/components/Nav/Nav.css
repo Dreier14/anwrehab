@@ -146,6 +146,11 @@
   .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
     top: 0;
   }
+
+  .notification-alert {
+    top: -15px !important;
+    left: -10px !important;
+  }
   
   /* 48em = 768px */
   
@@ -170,7 +175,6 @@
         .header .menu-icon{
             position: relative;
             margin-top: 1%;
-           
         }
   }
 

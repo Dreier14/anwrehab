@@ -11,8 +11,9 @@ import Testimonials from "./Testimonials.jpg"
 import Learn from "./Learn.jpg"
 import logo from "./logo.png";
 import Nav from '../Nav/Nav';
-import { Card, CardImg, CardText, CardBody,
+import { Row, Card, CardImg, CardText, CardBody,
     CardTitle, CardSubtitle, Button } from 'reactstrap';
+import Chart from '../Chart/Chart';
 import $ from 'jquery';
 // import '../../calendar';
 
@@ -26,8 +27,70 @@ export default class Home extends Component {
     render() {
         window.scrollTo(0, 0)
         return (
-        <div>
-            <Nav/>
+        <React.Fragment>
+            <Row sm="3">
+
+                <Chart
+                    title='Test'
+                    type='pie'
+                    dataSet={[
+                        {label: "Jan. '13'", quantity: 53},
+                        {label: "Feb. '13'", quantity: 165},
+                        {label: "Mar. '13'", quantity: 269},
+                        {label: "Apr. '13'", quantity: 344},
+                        {label: "May  '13'", quantity: 376},
+                        {label: "Jun. '13'", quantity: 410},
+                        {label: "Jul. '13'", quantity: 421},
+                        {label: "Aug. '13'", quantity: 405},
+                        {label: "Sep. '13'", quantity: 376},
+                        {label: "Oct. '13'", quantity: 359},
+                        {label: "Nov. '13'", quantity: 392},
+                        {label: "Dec. '13'", quantity: 433},
+                    ]}
+                    height={300}
+                    width={300}
+                />
+                <Chart
+                    title='Test 2'
+                    type='bar'
+                    dataSet={[
+                        {label: "Jan. '13'", value: 53},
+                        {label: "Feb. '13'", value: 165},
+                        {label: "Mar. '13'", value: 269},
+                        {label: "Apr. '13'", value: 344},
+                        {label: "May  '13'", value: 376},
+                        {label: "Jun. '13'", value: 410},
+                        {label: "Jul. '13'", value: 421},
+                        {label: "Aug. '13'", value: 405},
+                        {label: "Sep. '13'", value: 376},
+                        {label: "Oct. '13'", value: 359},
+                        {label: "Nov. '13'", value: 392},
+                        {label: "Dec. '13'", value: 433},
+                    ]}
+                    height={300}
+                    width={300}
+                />
+                <Chart
+                    title='Test 3'
+                    type='bar'
+                    dataSet={[
+                        {label: "Jan. '13'", value: 53},
+                        {label: "Feb. '13'", value: 165},
+                        {label: "Mar. '13'", value: 269},
+                        {label: "Apr. '13'", value: 344},
+                        {label: "May  '13'", value: 376},
+                        {label: "Jun. '13'", value: 410},
+                        {label: "Jul. '13'", value: 421},
+                        {label: "Aug. '13'", value: 405},
+                        {label: "Sep. '13'", value: 376},
+                        {label: "Oct. '13'", value: 359},
+                        {label: "Nov. '13'", value: 392},
+                        {label: "Dec. '13'", value: 433},
+                    ]}
+                    height={300}
+                    width={300}
+                />
+            </Row>
             <div className ="home-background">
             <br/>
             <div  className="master" style={{paddingTop:"95px"}}>
@@ -86,7 +149,7 @@ export default class Home extends Component {
                 </div>
             </div>
             <Footer/>
-        </div>
+        </React.Fragment>
         );
     }
 }

@@ -45,8 +45,7 @@ export default class Therapists extends Component {
         }) : <img className="loading" src ="https://www.voya.ie/Interface/Icons/LoadingBasketContents.gif"/>
 
         return (
-            <div>
-                <Nav/>
+            <React.Fragment>
                 <div className="therapist-background">
                     <div style={{paddingTop: '100px'}}>
                          <h1> <div align="center" className="therapists-head">Meet Our Team</div></h1>
@@ -55,7 +54,7 @@ export default class Therapists extends Component {
                      </div>
                 </div>
               <Footer/>
-            </div>
+            </React.Fragment>
         );
     }
 }

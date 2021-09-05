@@ -11,8 +11,7 @@ export default class extends Component {
     render() {
         window.scrollTo(0, 0)
         return (
-            <div>
-                <Nav/>
+            <React.Fragment>
                 <div className="learn-background">
                 
                     <div style={{paddingTop:"100px"}}>
@@ -52,7 +51,7 @@ export default class extends Component {
                     <br/>
                   </div>
                 <Footer/>
-            </div>   
+            </React.Fragment>   
         );   
     }
 }

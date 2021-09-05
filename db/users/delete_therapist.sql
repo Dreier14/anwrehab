@@ -19,4 +19,4 @@ INSERT INTO deleted_users
 );
 
 delete from users
-where id = ${therapistId};
+where lk_role_id = 3 and id = ${therapistId};

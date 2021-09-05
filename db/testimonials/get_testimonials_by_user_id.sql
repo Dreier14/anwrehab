@@ -1,0 +1,1 @@
+select * from testimonials where user_id = ${userId};

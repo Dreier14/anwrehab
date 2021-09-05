@@ -16,7 +16,7 @@ export default class AnwRehabCheckbox extends Component {
             name={name}
             render={({handler}) => (
                 <div className='remember-me-checkbox-container'>
-                  <input {...handler("checkbox")}/>
+                  <input name={name} {...handler("checkbox")}/>
                   <Label size="sm">
                     {label}
                   </Label>

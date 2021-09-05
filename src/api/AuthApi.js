@@ -1,17 +1,22 @@
-import axios from 'axios';
-import server from '../config.json';
+import { server } from '../constants/index';
+import * as apiCallCreators from './apiCallCreators';
 
 export default class AuthApi {
-    static login(username, password, rememberMe) {
-        const loginForm = { username, password, rememberMe };
-        return axios.post(server + '/login', loginForm)
-                    .then(res => res.data)
+    static login(loginForm) {
+        return apiCallCreators.post( '/login', loginForm)
+                    .then(result => {console.log("FUCKING RESULT:", result); return result;})
+                    .catch(error => {console.log("Error:", error); return error.message; });
+    }
+
+    static register(registerForm) {
+        return apiCallCreators.post( '/register', registerForm)
+                    .then(result => result)
                     .catch(error => error.message);
     }
 
     static logout() {
-        return axios.post(server + '/logout')
-                    .then((_) => ({success: true}))
+        return apiCallCreators.post( '/logout')
+                    .then((result) => result)
                     .catch(error => error.message);
     }
 }

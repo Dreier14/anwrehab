@@ -66,8 +66,7 @@ export default class Contact extends Component {
     render() {
         window.scrollTo(0, 0)
         return (
-        <div>
-            <Nav/>
+        <React.Fragment>
             <div className="mail-start">
             <div className="center-it">
             <div className= "mailer-form" style={{paddingTop: "105px"}}>
@@ -122,7 +121,7 @@ export default class Contact extends Component {
             </div>
             </div>
             <Footer/>
-        </div>
+        </React.Fragment>
             );
         }
     }

@@ -1,3 +1,4 @@
+const adminUtils = require('../utils/admin');
 const authUtils = require('../utils/auth');
 
 let therapists = [
@@ -123,30 +124,50 @@ let therapists = [
 ]
 
 const controllerMethods = {
-    getTherapistData: (req, res) =>{
-        const orm = req.app.get('orm');
-        console.log("ORM:", orm);
-        let data = therapists.map((element) => {
-            return element
-       });
-       res.status(200).json(data)
+    getTherapistData: async (req, res) =>{
+        const orm = req.app.get('orm'),
+              { id } = req.session.user.info;
+        let therapists;
+        
+        if(await authUtils.isAdmin(req)) {
+            therapists = await orm.query(
+                adminUtils.folders.users,
+                'get_all_therapists'
+            );
+        } else {
+            therapists = await orm.query(
+                adminUtils.folders.users,
+                'get_therapist_based_on_id',
+                { userId: id }
+            );
+        }
+
+        return res.json({ therapists });
     },
     updateTherapists: async (req, res) => {
         const orm = req.app.get('orm'),
-              { id } = req.session.user,
-              { username, photo, firstName, middleName, lastName, information, password, lkServiceId } = req.body,
-              hashedPassword = authUtils.hashPassword(password),
+              { id } = req.session.user.info,
+              { username, photo, firstName, middleName, lastName, information,  lkServiceId, importantFl } = req.body,
               { therapist_id } = req.params;
 
-        await orm.modify('update_therapist', { username, photo, firstName, middleName, lastName, information, password: hashedPassword, lkServiceId, therapistId: therapist_id, modifiedBy: id });
+        await orm.modify(
+            adminUtils.folders.users,
+            'update_therapist', 
+            { username, photo, firstName, middleName, lastName, information, lkServiceId, importantFl, therapistId: therapist_id, modifiedBy: id }
+        );
 
         return res.json({success: true});
     },
     deleteTherapists: async (req, res) => {
         const orm = req.app.get('orm'),
+              { id } = req.session.user.info,
               { therapist_id } = req.params;
 
-        await orm.modify('delete_therapist', { therapistId: therapist_id });
+        await orm.modify(
+            adminUtils.folders.users,
+            'delete_therapist', 
+            { therapistId: therapist_id, deletedBy: id }
+        );
 
         return res.json({success: true});
     }

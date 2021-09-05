@@ -10,8 +10,7 @@ export default class ErrorComponent extends Component {
     render() {
         window.scrollTo(0, 0)
         return (
-        <div>    
-            <Nav/>
+        <React.Fragment>
             <div className="background">
                   <div className = "Text">
                        404 Error 
@@ -26,7 +25,7 @@ export default class ErrorComponent extends Component {
                   </div>
               </div>
              <Footer/>
-        </div>  
+        </React.Fragment>  
             
         );
     }
