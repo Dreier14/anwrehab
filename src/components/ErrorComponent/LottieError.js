@@ -11,10 +11,6 @@ export default class LottieError extends React.Component {
   }
 
   render() {
-    const buttonStyle = {
-      display: 'block',
-      margin: '10px auto'
-    };
 
     const defaultOptions = {
       loop: true,

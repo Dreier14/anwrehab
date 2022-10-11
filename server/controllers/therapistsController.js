@@ -35,91 +35,69 @@ let therapists = [
         information: "I attended Creighton University where I graduated in May 1991 with a degree in B.S.O.T. and again in May 1997 with a degree in O.T.D. I became a therapist because I wanted to help people in need to re-gain as much function for a productive life. I have taken several courses in sensory processing and NDT handling. I've also taken several autism courses. Some of the hobbies I like to do are outdoor activities including hiking and biking. I am a parent of twins that are 16 and a 12 year old."
     },
     {
-        id: 7,
+        id: 6,
         photo: "https://drive.google.com/uc?id=1BrJUKH9bDKhial35sV5NWYNrV3Oj_kc6" ,
-        name: "Marissa E" ,
+        name: "Marissa E." ,
         service: "MS, OTR/L",
         information: "I attended Touro University in Nevada and graduated in 2016. I became a therapist because I wanted to help people DO things better instead of just FEEL better. One of my specialties is feeding therapy. Some of my hobbies are reading, spending time with my nieces and nephew, and going to the movies. I have three sisters and a basset hound named Fitzwilliam, after Mr. Fitzwilliam Darcy."
     },
     {
-        id: 8,
+        id: 7,
         photo: "https://drive.google.com/uc?export=view&id=1WJuo6Yj45ru5xY7Hu4ThdQnmbJB6VFoH" ,
         name: "Lori R." ,
         service: "COTA/L",
         information: "Lori Riley is a Certified Occupational Therapy Assistant. She is originally from Ohio and graduated from Kent State University in 2015. She is an Occupational Therapy practitioner in both home based pediatric and in the school settings. She specializes in providing sensory Integration strategies into her individualized interventions. She is also a very proud Air Force Mom to her son Nick. She enjoys crafting activities and spending time with her husband and son."
     },
     {
-        id: 9,
+        id: 8,
         photo: "https://drive.google.com/uc?id=1Tyu4UDxc0UfOucbl9xOE0fbbXiov0q80" ,
         name: "Larizza V." ,
         service: "COTA/L",
         information: "I graduated from San Diego State University in 2003 and graduated from Pima in 2015. I became a therapist because I have a passion to work with pediatrics and geriatrics populations. One of my specialties is Handwriting without Tears and Kinesiology Tape. Some of my hobbies are walking, hanging out with my family, and watching scary movies. I love watching Pimple Popper youtube."
     },
     {
-        id: 10,
-        photo: "https://drive.google.com/uc?id=1SRbC5K9J41UMDa7SIr3SwI0DUgp3AiBr" ,
-        name: "Octaviana C." ,
-        service: "COTA/L",
-        information: "I attended Pima Medical Institute where I graduated in 2010. I became a therapist because I like to see when people or kids get stronger, reach their goals and become independent. I am bilingual and fluent in English and Spanish. I have received training in Brain Gym, neuroplasticity in children, and strength training. I enjoy nature, hiking, camping and having fun with arts and crafts."
-    },
-    {
-        id: 11,
-        photo: "https://drive.google.com/uc?id=1zHI9vbL7SS17_AslCOwAeHOnfn6o3p2d" ,
-        name: "Sarah B." ,
-        service: "COTA/L",
-        information: "I attended Santa Ana College where I graduated in 2012. I became a therapist because I have a passion for helping people become independent in doing the things they love. I specialize in NDT, Feeding Therapy, and Handwriting Without Tears. I enjoy spending time with my family, reading, hiking, shopping, exercising, boating, quad riding, and working on cars. I have 3 children, I am a Capricorn, and I also met Blake Shelton on the Voice."
-    },
-    {
-        id: 12,
+        id: 9,
         photo: "https://drive.google.com/uc?id=1CPVxorHWMNchPBHDm5do6aeezziaoQRV" ,
         name: "Jason S." ,
         service: "COTA/L",
         information: "I attended Pima Medical Institute. I became a therapist because I wanted to help people that have a real need so they may achieve independence and live an abundant life. I like finding new and innovative ways to treat patients. I enjoy spending time with my family, going camping, fishing, and also doing some wood working."
     },
     {
-        id: 13,
+        id: 10,
         photo: "https://drive.google.com/uc?id=1jo_rwv_lgY7D2LSbmnwwhWY2ep9IPxkE" ,
         name: "Matthew H." ,
         service: "COTA/L",
         information: "I attended Brown Mackie College where I graduated in February of 2017. I became a therapist because I wanted a fun fulfilling career where all I do is help someone achieve the goals set for/by them and not feel like I worked a day in my life. Helping someone live as independently as possible knowing their lives are changed because of something I did is an amazing feeling. Sensory integration is something I am very interested in and have worked on. I enjoy hockey, gaming, hanging out with my wife and son, and working on my YouTube channel with my brother in law."
     },
     {
-        id: 14,
+        id: 11,
         photo: "https://drive.google.com/uc?id=1p-i2Rs0JHvdV33tk-E3rGhawMAR666Oz" ,
         name: "Gabby S." ,
         service: "COTA/L",
         information: "I attended Brown Mackie College and became a therapist because I had a student with autism, he inspired me to become a COTA. One of my specialties is Hand-Writing Without Tears. Some of my hobbies include dancing and reading. I also love snoopy cartoons!"
     },
     {
-        id: 15,
-        photo: null ,
-        name: "Lisa S." ,
-        service: "COTA",
-        information: "Lisa graduated from Brown Mackie College in 2011, Lisa is fluent in Japanese and enjoys spending time with her son and health and wellness. Lisa has 8 plus years pediatric OT experience."
-    },
-    {
-        id: 16,
+        id: 12,
         photo: null ,
         name: "Mallory C." ,
         service: "COTA",
         information: "Mallory enjoys working with people from all backgrounds while helping them increase the value of their lives.  Mallory enjoys crafting, hiking and visiting farmers markets."
     },
     {
-        id: 17,
+        id: 13,
         photo: null ,
         name: "Christina R." ,
         service: "SLP",
         information: "	Christina graduated from the University of Texas at El Paso in 2006. Christina is bilingual in Spanish/English and has extensive experience with brain injuries. Christina became a therapist after her grandmother had a stroke and she saw how much the speech therapist helped her, she knew that she wanted to help people in that way. Christina enjoys watching her kids play sports and working out."
     },
     {
-        id: 18,
-        photo: null ,
-        name: "I am a mother of 12, yes 12!  Two of my children have Cerebral Palsy, my interest in the field stems from the many hours of therapy I have been through with my girls.  I enjoy spending time outdoors with my family!" ,
+        id: 14,
+        photo: "https://drive.google.com/uc?id=1vAN715YkuG_g4x0Di-LSjnB8iJZJIa5B" ,
+        name: "Jessica H." ,
         service: "Administrative Asst.",
         information: "I am a mother of 12, yes 12!  Two of my children have Cerebral Palsy, my interest in the field stems from the many hours of therapy I have been through with my girls.  I enjoy spending time outdoors with my family!"
     },
 ]
-
 
 module.exports ={
     getTherapistData : (req, res) =>{

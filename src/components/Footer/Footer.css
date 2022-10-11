@@ -1,4 +1,4 @@
-.footer{
+.footer {
     margin-bottom: -100px;
     position: absolute;
     left: 0;
@@ -17,25 +17,25 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    margin-bottom: -1em;
   }
 
  .footer-menu li a {
-  
     position: relative;
     padding: 14px 16px;
     text-decoration: none;
     font-size: 15px;
 }
 
-.copyright{
+.copyright {
     margin-left: 3%;
-
 }
 
 
- ul .footer-menu{
+ ul .footer-menu {
      list-style: none;
  }
+
 .footer .logo {
   
     text-align: center;
@@ -45,6 +45,11 @@
     padding-top: 5px;
     text-decoration: none;
     font-size:2.5em;
+  }
+
+  .footer-img {
+    height: 15%;
+    width: 20%;
   }
   
   @media(max-width: 447px){

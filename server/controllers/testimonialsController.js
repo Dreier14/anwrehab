@@ -24,6 +24,11 @@ let testimonials=[
         name:"Annette L.",
         services:"Occupational Therapy & Hand-Writing Without Tears",
         experience:"We've worked with Shayna and now Larizza. We used Shayna as both a Handwriting without Tears coach and as an OT.  She is so patient and encouraging that our son (who doesn't need therapy) wants to do the activities!"
+    },
+    {
+        name:"T.P.",
+        services:"Aquatic Therapy",
+        experience:"Kris has been a big positive with her services in Aquatic Therapy. Our child is enjoying the therapy and we would absolutely recommend Aquatic-N-Writing Rehab. Our experience with them has been proven to be very helpful and Kris is very friendly!"
     }
 ]
 

@@ -4,7 +4,6 @@ import Footer from '../Footer/Footer';
 import "./Testimonial.css";
 import Rehab from './Rehab.jpg';
 import { Link } from 'react-router-dom';
-import { Container, Row, Col } from 'reactstrap';
 import Nav from '../Nav/Nav';
 
 export default class Testamonials
@@ -44,7 +43,7 @@ export default class Testamonials
                   <div> {e.name} </div>
                 </div> 
             )
-        }) : <img className ="loading" src="https://www.voya.ie/Interface/Icons/LoadingBasketContents.gif"/>
+        }) : <img alt="loading" className ="loading" src="https://www.voya.ie/Interface/Icons/LoadingBasketContents.gif"/>
         return (
         <div>
             <Nav/>
