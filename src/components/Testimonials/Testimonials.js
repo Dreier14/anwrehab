@@ -43,7 +43,7 @@ export default class Testamonials
                   <div> {e.name} </div>
                 </div> 
             )
-        }) : <img alt="loading" className ="loading" src="https://www.voya.ie/Interface/Icons/LoadingBasketContents.gif"/>
+        }) : <img alt="loading" className ="loading" src="https://i.gifer.com/ZKZg.gif"/>
         return (
         <div>
             <Nav/>
