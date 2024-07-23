@@ -49,7 +49,7 @@ export default class Therapists extends Component {
                 <Nav/>
                 <div className="therapist-background">
                     <div style={{paddingTop: '100px'}}>
-                         <h1> <div align="center" className="therapists-head">Meet Our Team</div></h1>
+                         <h1> <div align="center" className="header-for-testimonials" style={{ fontSize: '1.5em'}}>Meet Our Team</div></h1>
                          <hr/>
                              <div> {allTherapists} </div>
                      </div>

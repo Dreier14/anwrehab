@@ -42,13 +42,10 @@ export default class extends Component {
                             <br/>
                             <br/>
                             <div className="magazine-pic">
-                                <img class="img-fluid" src='https://drive.google.com/uc?export=view&id=1YUyyysqWZoNOHVEMLJkRb2gKXxpNh-Gv'style={{margin:"auto"}}/>
+                                <img class="img-fluid" src='https://drive.google.com/thumbnail?id=1YUyyysqWZoNOHVEMLJkRb2gKXxpNh-Gv'style={{margin:"auto"}}/>
                                 <br/>
                                 <br/>
-                                <img class="img-fluid" src='https://drive.google.com/uc?export=view&id=1YUyyysqWZoNOHVEMLJkRb2gKXxpNh-Gv'style={{margin:"auto"}}/>
-                                <br/>
-                                <br/>
-                                <img class="img-fluid" src='https://drive.google.com/uc?export=view&id=1Q-FVAKNfZXdo7LnRv9t3fxWbEykMfbBY'style={{margin:"auto"}}/>
+                                <img class="img-fluid" src='https://drive.google.com/thumbnail?id=1Q-FVAKNfZXdo7LnRv9t3fxWbEykMfbBY'style={{margin:"auto"}}/>
                                 <br/>
                                 <br/>
                                 <Col className="mag" xs="auto">Check out our article from <br/> Uptown and So Scottsdale Magazine</Col>

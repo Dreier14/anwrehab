@@ -18,12 +18,10 @@ export default class Footer extends Component {
         }
     }
     showLogin = () => {
-        console.log('HIT----------->');
         this.setState({
             showing: !this.state.showing,
             open: true
         })
-        // this.toggleOn()
     }
 
     onCloseModal = () => {
@@ -37,7 +35,7 @@ export default class Footer extends Component {
             <div className = "footer">
               <Link to = "/" className= "logo"></Link>
                 <div className="main-conatainer">
-                        <img className="footer-img" src="https://drive.google.com/uc?id=1jpqKCoeAvkeWlo7p09L8Fiwm_h7ELozj" />
+                        <img className="footer-img" src="https://drive.google.com/thumbnail?id=1jpqKCoeAvkeWlo7p09L8Fiwm_h7ELozj" />
                         <ul className="footer-menu">
                             <Wrapper><Link to="/">Home</Link></Wrapper>
                             <Wrapper><Link to="/Contact">Contact</Link></Wrapper>

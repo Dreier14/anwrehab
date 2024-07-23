@@ -36,6 +36,11 @@
     height:auto;
 }
 
+.store-background{
+    background: rgba(0, 255, 149, 0.702);
+    height:auto;
+}
+
 .teach-text{
     font-family: 'Snowburst One',serif;
     font-size: 200%;
