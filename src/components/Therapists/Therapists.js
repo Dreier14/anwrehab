@@ -42,7 +42,7 @@ export default class Therapists extends Component {
                    <br/>
                 </div> 
             )
-        }) : <img className="loading" src ="https://www.voya.ie/Interface/Icons/LoadingBasketContents.gif"/>
+        }) : <img className="loading" src="https://i.gifer.com/ZKZg.gif"/>
 
         return (
             <div>
