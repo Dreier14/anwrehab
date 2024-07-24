@@ -1,4 +1,4 @@
-require( "dotenv" ).config();
+import "dotenv/config";
 const nodemailer = require( 'nodemailer' );
 import { Request, Response, NextFunction } from "express";
 
