@@ -32,7 +32,7 @@ export const sendMail = (
         text: name + ' ' + email + ' ' + text,
     }
 
-    transporter.sendMail( message, ( err, info ) => {
+    transporter.sendMail( message, ( err: any, info: any ) => {
         if( err ){
             console.log(err);
             

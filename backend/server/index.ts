@@ -1,9 +1,6 @@
 require('dotenv').config()
 import express, { Express } from "express";
 const path = require('path');
-const session = require( 'express-session' );
-const massive = require( 'massive' );
-const bodyParser = require( 'body-parser' );
 const sM =require('./controllers/nodeMailerController'); 
 const therapists = require('./controllers/therapistsController');
 const tests = require('./controllers/testimonialsController');
@@ -11,15 +8,6 @@ const tests = require('./controllers/testimonialsController');
 const {APP_PORT, DB_HOST, DB_PORT, DB, DB_USER, DB_PASS} = process.env
 
 const app: Express = express();
-
-app.use(session({
-  secret: process.env.SESSION_SECRET,
-  resave: false,
-  saveUninitialized: false,
-  cookie: {
-      maxAge: 60 * 60 * 60 * 24 * 14
-  }
-}))
 
 // massive({
 //   host: DB_HOST,
@@ -39,7 +27,7 @@ app.get('/api/getTests', tests.getTestamonials);
 app.get('/api/getInfo', therapists.getTherapistData);
 
 /*********Node Mailer Endpoint ***********************/
-app.post('/api/sendmail', sM.sendMail);
+// app.post('/api/sendmail', sM.sendMail);
 
 
 app.get('*', (req, res)=>{
