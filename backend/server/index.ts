@@ -1,10 +1,8 @@
 require('dotenv').config()
 import express, { Express } from "express";
 import cors from "cors";
-const path = require('path');
-const sM =require('./controllers/nodeMailerController'); 
-const therapists = require('./controllers/therapistsController');
-const tests = require('./controllers/testimonialsController');
+import * as therapists from './controllers/therapistsController'
+import * as tests from './controllers/testimonialsController';
 
 const {APP_PORT, DB_HOST, DB_PORT, DB, DB_USER, DB_PASS} = process.env
 
