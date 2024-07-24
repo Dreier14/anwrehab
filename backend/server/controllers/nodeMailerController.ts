@@ -9,6 +9,7 @@ export const sendMail = (
 ) => {
     const { name, email, text } = req.body
     // const db = req.app.get('db');
+    console.log()
     let transporter = nodemailer.createTransport({
             service: "gmail",
             auth:{
