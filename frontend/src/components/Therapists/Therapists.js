@@ -3,7 +3,7 @@ import axios from 'axios';
 import Footer from '../Footer/Footer';
 import './Therapists.css'
 import Nav from '../Nav/Nav';
-
+import 'dotenv/config';
 
 export default class Therapists extends Component {
     constructor(){
@@ -20,7 +20,7 @@ export default class Therapists extends Component {
 
 
     getTherapist(){
-        axios.get('/api/getInfo').then(response => {
+        axios.get(`${process.env.API_BASE_URL}/api/getInfo`).then(response => {
             this.setState({
                 therapistInfo: response.data
             })

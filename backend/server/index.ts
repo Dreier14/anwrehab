@@ -4,13 +4,13 @@ import cors from "cors";
 import * as therapists from './controllers/therapistsController'
 import * as tests from './controllers/testimonialsController';
 
-const {APP_PORT, DB_HOST, DB_PORT, DB, DB_USER, DB_PASS} = process.env
+const {APP_PORT, DB_HOST, DB_PORT, DB, DB_USER, DB_PASS, NODE_FRONTEND_URL} = process.env
 
 const app: Express = express();
 
 app.use(
   cors({
-      origin: '*',
+      origin: `${NODE_FRONTEND_URL}`,
   }),
   express.json()
 );

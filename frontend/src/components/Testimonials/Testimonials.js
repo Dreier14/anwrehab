@@ -5,6 +5,7 @@ import "./Testimonial.css";
 import Rehab from './Rehab.jpg';
 import { Link } from 'react-router-dom';
 import Nav from '../Nav/Nav';
+import 'dotenv/config';
 
 export default class Testamonials
  extends Component {
@@ -22,8 +23,7 @@ export default class Testamonials
     }
 
     getRehabInfo(){
-        axios.get('/api/getTests').then(response => {
-            console.log(response)
+        axios.get(`${process.env.API_BASE_URL}/api/getTests`).then(response => {
             this.setState({      
                getClientInfo: response.data
                
