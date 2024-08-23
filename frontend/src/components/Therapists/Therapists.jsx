@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import axios from 'axios';
 import Footer from '../Footer/Footer';
 import './Therapists.css'
 import Nav from '../Nav/Nav';
+import { createApi } from  '../../../helpers/axios'
 
 export default class Therapists extends Component {
     constructor(){
@@ -18,7 +18,7 @@ export default class Therapists extends Component {
     }
 
     getTherapist(){
-        axios.get(`${import.meta.env.VITE_BASE_URL}/api/getInfo`).then(response => {
+        createApi.get(`/api/getInfo`).then(response => {
             this.setState({
                 therapistInfo: response.data
             })
