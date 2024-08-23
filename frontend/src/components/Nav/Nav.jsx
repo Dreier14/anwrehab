@@ -43,7 +43,7 @@ export default class Nav extends Component {
                                     <Wrapper><Link to="/">Home <Icon icon={home2} size={25}/></Link></Wrapper>
                                     <Wrapper><Link to="/Testimonials">Testimonials <Icon icon={u1F46A} size={25}/></Link></Wrapper>
                                     <Wrapper><Link to="/LearnMore">Learn More <Icon icon={u1F4AD} size={25}/></Link></Wrapper>
-                                    <Wrapper><Link to="/Shop">Shop <Icon icon={cart} size={25}/></Link></Wrapper>
+                                    <Wrapper><Link to="/Shop">TEST <Icon icon={cart} size={25}/></Link></Wrapper>
                                 </ul>
                 </header>
             </div>
