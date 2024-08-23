@@ -22,7 +22,7 @@ export default class Testamonials
     }
 
     getRehabInfo(){
-        axios.get(`${import.meta.env.VITE_BASE_URL}/api/getTests`).then(response => {
+        axios.get(`${import.meta.env.VITE_BASE_URL}/api/getTest`).then(response => {
             this.setState({      
                getClientInfo: response.data
                
