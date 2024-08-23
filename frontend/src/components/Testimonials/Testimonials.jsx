@@ -5,6 +5,7 @@ import "./Testimonial.css";
 import Rehab from './Rehab.jpg';
 import { Link } from 'react-router-dom';
 import Nav from '../Nav/Nav';
+import { createApi } from  '../../../helpers/axios'
 
 export default class Testamonials
  extends Component {
@@ -15,14 +16,13 @@ export default class Testamonials
         }
     }
 
-
     componentDidMount(){
         this.getRehabInfo()
         window.scrollTo(0, 0)
     }
 
     getRehabInfo(){
-        axios.get(`${import.meta.env.API_BASE_URL}/api/getTests`).then(response => {
+        axios.get(`${import.meta.env.VITE_BASE_URL}/api/getTests`).then(response => {
             this.setState({      
                getClientInfo: response.data
                

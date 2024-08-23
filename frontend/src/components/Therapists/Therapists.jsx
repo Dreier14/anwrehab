@@ -18,7 +18,7 @@ export default class Therapists extends Component {
     }
 
     getTherapist(){
-        axios.get(`${import.meta.env.API_BASE_URL}/api/getInfo`).then(response => {
+        axios.get(`${import.meta.env.VITE_BASE_URL}/api/getInfo`).then(response => {
             this.setState({
                 therapistInfo: response.data
             })

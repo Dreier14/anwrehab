@@ -47,11 +47,6 @@
   "now": {
     "alias": "anwrehab"
   },
-  "proxy": {
-    "/api": {
-      "target": "http://localhost:3500"
-    }
-  },
   "devDependencies": {
     "@vitejs/plugin-react": "^4.3.1",
     "vite": "^5.4.2"

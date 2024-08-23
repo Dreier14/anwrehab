@@ -16,6 +16,7 @@ import { Card, CardImg, CardText, CardBody,
 
 export default class Home extends Component {
     render() {
+        console.log(import.meta.env.VITE_BASE_URL)
         window.scrollTo(0, 0)
         return (
         <div>
