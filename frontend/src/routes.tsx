@@ -1,8 +1,7 @@
-import React from 'react';
 import {Route, Routes} from "react-router-dom";
 import {Home} from './components/Home/Home'
 import {Nav} from './components/Nav/Nav';
-// import {Contact} from './components/Contact/Contact';
+import {Contact} from './components/Contact/Contact';
 import {LearnMore} from './components/LearnMore/LearnMore';
 import {Therapists} from './components/Therapists/Therapists';
 import {ErrorComponent} from './components/ErrorComponent/ErrorComponent';
@@ -17,7 +16,7 @@ export default (
         <>
             <Routes>
                 <Route path='/' element={ <Home /> }/> 
-                {/* <Route path ='/Contact' element={ <Contact /> }/> */}
+                <Route path ='/Contact' element={ <Contact /> }/> 
                 <Route path ='/LearnMore' element={ <LearnMore/>}/>
                 <Route path ='/Therapists' element={ <Therapists/> }/>
                 <Route path ='/Testimonials' element={ <Testimonials/> }/>

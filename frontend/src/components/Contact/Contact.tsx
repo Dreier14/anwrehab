@@ -1,71 +1,33 @@
-import React, { Component } from 'react';
+import React, { useState } from 'react';
 import axios from 'axios';
 import './Contact.css';
-import Footer from '../Footer/Footer';
-import Nav from '../Nav/Nav';
 
-export default class Contact extends Component {
-    constructor() {
-        super();
+export const Contact: React.FC = (): JSX.Element => {
+    const [name, setName] = useState<string>('');
+    const [email, setEmail] = useState<string>('');
+    const [text, setText] = useState<string>('');
 
-        this.state = {
-            name: '',
-            email: '',
-            text: ''
-        }
+   const clearAllFields = () => {
+        setName('');
+        setEmail('');
+        setText('');
     }
-   clearAllFields = () => {
-        this.setState({
-           text:''
-        })
-      }
-    
-    
-   handleChange = (e) =>{
-      this.setState({
-         text: e
-        })
-      }
-   nameHandler = (e) => {
-       this.setState({
-           name: e
-       })
-   }
 
-   emailHandler = (e) => {
-       this.setState({
-           email: e
-       })
-   }
-
-   messageHandler = (e) => {
-       this.setState({
-           text: e
-       })
-   }
-
-    handleSubmit = (e) => {
+    const handleSubmit = (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
         e.preventDefault();
-        const { name, email, text } = this.state
         axios.post('/api/sendmail', {
             name,
             email,
             text,
         }).then( res => {
-            this.setState({
-                text:'',
-                email:'',
-                name:''
-             })
+            clearAllFields();
             console.log( 'mail', JSON.stringify( res.data ) )
         })
     }
 
-    render() {
         window.scrollTo(0, 0)
         return (
         <div>
-            <Nav/>
             <div className="mail-start">
             <div className="center-it">
             <div className= "mailer-form" style={{paddingTop: "105px"}}>
@@ -79,25 +41,25 @@ export default class Contact extends Component {
                             <div className="form-field">
                             <label htmlFor="name">
                                 <div className="label-content">Name:</div>
-                                <input className="fields" onChange={ event => this.nameHandler(event.target.value)} type="text" name="name" required value={this.state.name}/>
+                                <input className="fields" onChange={ event => setName(event.target.value)} type="text" name="name" required value={name}/>
                             </label>
                             </div>
 
                             <div className="mailer">
                             <label htmlFor="email">
                                 <div className="label-content">Email:</div>
-                                <input className="fields" onChange={ event => this.emailHandler(event.target.value)} type="email" name="email" required value={this.state.email}/>
+                                <input className="fields" onChange={ event => setEmail(event.target.value)} type="email" name="email" required value={email}/>
                             </label>
                             </div>
 
                             <div className="mailer">
                             <label htmlFor="message">
                                 <div className="label-content">Message:</div>
-                                <textarea background="white" rows="9"  cols="25" className="edit-space" onChange={ (event) =>[this.handleChange(event.target.value), this.messageHandler(event.target.value)]} name="message" required value={this.state.message}/>
+                                <textarea rows={9}  cols={25} className="edit-space" onChange={(event) =>setText(event.target.value)} name="message" required value={text}/>
                             </label>
                             </div>
                 
-                            <button className="inputfile" onClick={ (e) => this.handleSubmit(e) } type="submit">Send</button>
+                            <button className="inputfile" onClick={ (e) => handleSubmit(e) } type="submit">Send</button>
                      
                             <div>
                             { window.location.hash === '#success' &&
@@ -119,8 +81,6 @@ export default class Contact extends Component {
             </div>
             </div>
             </div>
-            <Footer/>
         </div>
             );
         }
-    }
