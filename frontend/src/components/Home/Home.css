@@ -3,18 +3,13 @@
 @import url("https://fonts.googleapis.com/css?family=Snowburst+One");
 
 .chalkboard{
-    background: #4b00ff38;
-    border-style: solid;
-    border-color: #370080;
-    border-width: 1.2px;
+    background: rgba(228, 131, 228, 0.9);
 }
 
 .crayon {
-    width: 20vw;
+    width: 12vw;
+    margin-top: 25px
 }
-/* .board .card{
-    border-style: none;
-} */
 
 .card{
     border-style: solid;
@@ -43,24 +38,12 @@
 
 .home-background{
     background-image: url('https://i.imgur.com/t9lZsTc.png');
-    width:100%;
+    width:100vw;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
 }
-
-
-.background-image{
-    height: 200%;
-    width:  100%;
-}
-
-.background-image-two{
-    height: 38vh;
-    width:  100%;
-}
-
 
 .learn-picture{
     display: none;
@@ -106,13 +89,13 @@
     .unleashed{
         margin:5%;
     }
-    .crayon {
+    /* .crayon {
         width: 14vw;
-    }
+    } */
 
     .master {
-            width: 70%;
-            margin-left: 15%;
+        width: 70%;
+        margin-left: 15%;
     }
     
     .text-block{
@@ -139,9 +122,7 @@
     .centered{
         display: flex;
         flex-direction: column;
-    }
-
-    
+    }  
 }
 
 

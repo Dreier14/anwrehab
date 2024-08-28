@@ -1,54 +1,38 @@
 {
   "name": "anwrehab",
-  "main": "server/index.js",
-  "version": "0.1.0",
   "private": true,
-  "dependencies": {
-    "axios": "^0.18.0",
-    "bcryptjs": "^2.4.3",
-    "body-parser": "^1.18.3",
-    "bootstrap": "^4.6.0",
-    "concurrently": "^5.3.0",
-    "dotenv": "^6.2.0",
-    "express": "^4.17.1",
-    "express-session": "^1.15.6",
-    "express-sessions": "^1.0.6",
-    "google-map-react": "^1.0.8",
-    "i": "^0.3.6",
-    "jquery": "^3.5.1",
-    "massive": "^5.11.2",
-    "mongoose": "^5.11.12",
-    "nodemailer": "^4.6.8",
-    "nodemon": "^1.18.4",
-    "now-env": "^3.2.0",
-    "pg": "^8.5.1",
-    "pg-promise": "^10.8.7",
-    "popper.js": "^1.16.1",
-    "react": "^16.14.0",
-    "react-bootstrap": "^0.32.4",
-    "react-dom": "^16.14.0",
-    "react-icons": "^3.11.0",
-    "react-icons-kit": "^1.1.7",
-    "react-lottie": "^1.2.3",
-    "react-redux": "^5.0.7",
-    "react-responsive-modal": "^3.3.0",
-    "react-router-dom": "^4.3.1",
-    "reactstrap": "^6.5.0",
-    "redux": "^4.0.0",
-    "styled-components": "^3.4.5",
-    "typeface-snowburst-one": "^0.0.54",
-    "vercel": "^21.3.3"
-  },
+  "version": "0.0.0",
+  "type": "module",
   "scripts": {
-    "start": "vite",
-    "build": "vite build",
-    "serve": "vite preview"
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "lint": "eslint .",
+    "preview": "vite preview"
   },
-  "now": {
-    "alias": "anwrehab"
+  "dependencies": {
+    "axios": "^1.7.5",
+    "bootstrap": "^5.3.3",
+    "dotenv": "^16.4.5",
+    "normalize.css": "^8.0.1",
+    "react": "^18.3.1",
+    "react-bootstrap": "^2.10.4",
+    "react-dom": "^18.3.1",
+    "react-icons-kit": "^2.0.0",
+    "react-router-dom": "^6.26.1",
+    "reactstrap": "^9.2.2",
+    "styled-components": "^6.1.12"
   },
   "devDependencies": {
+    "@eslint/js": "^9.9.0",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
     "@vitejs/plugin-react": "^4.3.1",
-    "vite": "^5.4.2"
+    "eslint": "^9.9.0",
+    "eslint-plugin-react-hooks": "^5.1.0-rc.0",
+    "eslint-plugin-react-refresh": "^0.4.9",
+    "globals": "^15.9.0",
+    "typescript": "^5.5.3",
+    "typescript-eslint": "^8.0.1",
+    "vite": "^5.4.1"
   }
 }

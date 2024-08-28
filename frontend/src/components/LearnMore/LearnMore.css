@@ -5,10 +5,10 @@
     color: rgb(57, 120, 214)!important;
 }
 
-.video{
-    height: 100%;
+.video {
+    height: 40vh;
     width: 100%;
-    /* padding-left:10%; */
+    text-align: center;
 }
 
 .ndfHFb-c4YZDc-HiaYvf-s2gQvd{
@@ -20,32 +20,21 @@
     display: table !important;
 }
 
-.magazine-pic{
-    margin: 0 auto !important;
-    display: table !important;
-    width: 100%;
-}
-
-
-.master-learn{
-    height: 100%;
-}
-
 .learn-background{
+    /* width: 100% !important; */
     background: rgba(251, 255, 0, 0.63);
-    height:auto;
+    height: auto;
 }
 
 .store-background{
     background: rgba(0, 255, 149, 0.702);
-    height:auto;
 }
 
 .teach-text{
     font-family: 'Snowburst One',serif;
     font-size: 200%;
     text-align: center;
-    margin: auto;
+    padding-top: 25px;
 }
 
 .mag{
@@ -70,6 +59,11 @@
     box-shadow: 0px 10px 14px -7px #276873; 
 }
 
+.master-learn{
+    margin: auto;
+    text-align: center;
+}
+
 .button-flex{
     display: flex;
     flex-direction: row;
@@ -81,7 +75,6 @@
     color: rgb(57, 120, 214) !important;
     background-color: rgb(124, 192, 164) !important;
 }
-
 
 .facebook-text{
     text-align:center;
@@ -96,7 +89,17 @@
     font-family: 'Snowburst One',serif;
 }
 
+.row-button{
+    width: 50%; 
+    margin: auto !important;
+    padding-bottom: 5px
+}
+
 @media(min-width: 700px){
+
+    .row-button{
+        width: 25%; 
+    }
 
     .magazine-pic{
         width: 50%;
@@ -112,16 +115,7 @@
 
     }
 
-    .video{
-        height:60vh;
-        width:50vw;
-        display: flex;
-        flex-direction: column;
-        /* padding-left:10%; */
-    }
-
-    .master-learn{
-        width: 70%;
-        margin: auto;
+    .video {
+        height: 65vh;
     }
 }

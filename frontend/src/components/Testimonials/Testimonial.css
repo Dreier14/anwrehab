@@ -8,6 +8,7 @@
     position: relative;
     background-attachment: fixed;
     min-height: 130vh;
+    min-width: 100vw;
 }
 
 .header-for-testimonials{
