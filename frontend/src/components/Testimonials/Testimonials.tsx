@@ -2,7 +2,8 @@ import React, { useEffect, useState } from 'react';
 import "./Testimonial.css";
 import Rehab from './Rehab.jpg';
 import { Link } from 'react-router-dom';
-import { createApi } from  '../../../helpers/axios'
+import { BASE_URL } from  '../../../helpers/axios'
+import axios from 'axios';
 
 export const Testimonials: React.FC = (): JSX.Element => {
     const [clientInfo, setTestimonialInfo] = useState<Array<Record<string,string>>|null>(null);
@@ -13,7 +14,7 @@ export const Testimonials: React.FC = (): JSX.Element => {
     }, []);
 
     const getTestimonials = () => {
-        createApi.get(`/api/getTests`).then(response => {
+        axios.get(`${BASE_URL.apiPath}/api/getTests`).then(response => {
             setTestimonialInfo(response.data)
         }).catch(err => console.log("Cannot Retrieve Rehab Testimonials", err));
     }

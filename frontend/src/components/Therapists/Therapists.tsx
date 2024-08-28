@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './Therapists.css'
-import { createApi } from  '../../../helpers/axios'
+import { BASE_URL } from  '../../../helpers/axios'
+import axios from 'axios';
 
 export const Therapists: React.FC = (): JSX.Element => {
     const [therapistInfo, setTherapistInfo] = useState<Array<Record<string,string>>|null>(null);
@@ -11,7 +12,7 @@ export const Therapists: React.FC = (): JSX.Element => {
     }, []);
 
     const getTherapist = () => {
-        createApi.get(`/api/getInfo`).then((response: { data: React.SetStateAction<Record<string, string>[] | null>; }) => {
+        axios.get(`${BASE_URL}/api/getInfo`).then((response: { data: React.SetStateAction<Record<string, string>[] | null>; }) => {
             setTherapistInfo(response.data)
         }).catch((err: unknown) => console.log("Cannot Retrieve Photo Data", err));
     }

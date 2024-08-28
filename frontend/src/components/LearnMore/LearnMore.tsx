@@ -13,7 +13,7 @@ export const LearnMore: React.FC = (): JSX.Element => {
                         <div className="embed-responsive embed-responsive-16by9">
                             <iframe className="video" src="https://www.youtube.com/embed/8rWgTm-CRO4" allow="autoplay; encrypted-media"></iframe>
                         </div>
-                        <Col xs="auto" className="teach-text">Teaching Assistive <br/>Techonology</Col>
+                        <Col xs="auto" className="teach-text" >Teaching Assistive <br/>Techonology</Col>
                         <div className="embed-responsive embed-responsive-16by9">
                             <iframe className="video" src="https://www.youtube.com/embed/1PnkZ5BUsP8" allow="autoplay; encrypted-media" allowFullScreen></iframe>
                         </div>
