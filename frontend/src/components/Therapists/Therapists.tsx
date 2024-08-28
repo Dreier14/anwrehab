@@ -12,7 +12,8 @@ export const Therapists: React.FC = (): JSX.Element => {
     }, []);
 
     const getTherapist = () => {
-        axios.get(`${BASE_URL}/api/getInfo`).then((response: { data: React.SetStateAction<Record<string, string>[] | null>; }) => {
+        const url = '/api/getInfo';
+        axios.get(url, { baseURL:`${BASE_URL.apiPath}`}).then((response: { data: React.SetStateAction<Record<string, string>[] | null>; }) => {
             setTherapistInfo(response.data)
         }).catch((err: unknown) => console.log("Cannot Retrieve Photo Data", err));
     }
