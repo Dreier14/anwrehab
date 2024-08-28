@@ -17,6 +17,7 @@ export const Testimonials: React.FC = (): JSX.Element => {
         const url = '/api/getTests';
         axios.get(url, { baseURL:`${BASE_URL.apiPath}`}).then(response => {
             setTestimonialInfo(response.data)
+            console.log(response)
         }).catch(err => console.log("Cannot Retrieve Rehab Testimonials", err));
     }
 
