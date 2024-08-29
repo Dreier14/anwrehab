@@ -94,6 +94,13 @@ const therapists = [
     },
     {
         id: 14,
+        photo: "https://drive.google.com/thumbnail?id=1XjUCMh_8ReP16XhaPvVVRorzLnOzJCo_" ,
+        name: "Simone H." ,
+        service: "SLPA",
+        information: "I hold a Bachelor's degree in Early Childhood Education from the University of Oklahoma and a Master's degree in Early Childhood from Grand Canyon University. Additionally, I am a certified Speech Language Pathology Assistant with a Certificate of Completion from Estrella Mountain Community College. I am proud to also be ASHA certified as a C-SLPA. Professionally, I have worked in the Arizona public school system as an SLPA since 2010, servicing developmental preschool and special education programs. I  serve as Vice Chair of the FIRST THINGS FIRST Arizona Early Childhood Development & Health Board Southwest Maricopa Regional Partnership Council, where I am dedicated to promoting early childhood education and development initiatives. Additionally, I am a member of the Speech and Hearing Advisory Committee with the Arizona Department of Health Services (AzDHS)."
+    },
+    {
+        id: 15,
         photo: "https://drive.google.com/thumbnail?id=1vAN715YkuG_g4x0Di-LSjnB8iJZJIa5B" ,
         name: "Jessica H." ,
         service: "Administrative Asst.",
