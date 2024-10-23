@@ -138,7 +138,7 @@
   
   /* 48em = 768px */
   
-  @media (min-width: 1000px) {
+  @media (min-width: 1355px) {
     .header li {
       float: left;
     }
@@ -155,7 +155,7 @@
     }
   }
 
-  @media(max-width: 1000px){
+  @media(max-width: 1355px){
         .header .menu-icon{
             position: relative;
             margin-top: 1%;
