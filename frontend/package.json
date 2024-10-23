@@ -20,7 +20,8 @@
     "react-icons-kit": "^2.0.0",
     "react-router-dom": "^6.26.1",
     "reactstrap": "^9.2.2",
-    "styled-components": "^6.1.12"
+    "styled-components": "^6.1.12",
+    "typescript": "^5.5.3"
   },
   "devDependencies": {
     "@eslint/js": "^9.9.0",
