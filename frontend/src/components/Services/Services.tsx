@@ -8,7 +8,7 @@ export const Services: React.FC = () => {
     <div style={{background: 'rgb(20, 201, 224)'}}>
         <Container style={{marginTop: '70px'}}>
             <Row>
-                <img src={'https://drive.google.com/thumbnail?id=1Ir_A0L5Q9c42QHB9L14GDTVi00k3YPKx&sz=w800'}/>
+                <img src={'https://drive.google.com/thumbnail?id=1g18QpdoUGrKqK4AKgygTpQizh5bFhm5a&sz=w800'}/>
             </Row>
         </Container>
     </div>
